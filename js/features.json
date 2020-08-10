@@ -1,0 +1,18 @@
+{
+    "smcp": "Small Capitals",
+    "ss01": "Stylistic Set 1 (Roman numerals)",
+    "ss03": "Stylistic Set 3 (Greek SC adscript iota)",
+    "ss02": "Stylistic Set 2 (Dynamic arrows and triangles)",
+    "ss04": "Stylistic Set 4 (Greek adscript iota)",
+    "ordn": "Ordinals",
+    "subs": "Subscript",
+    "sups": "Superscript",
+    "liga": "Standard Ligatures",
+    "tnum": "Tabular Figures",
+    "lnum": "Lining Figures",
+    "pnum": "Proportional Figures",
+    "onum": "Oldstyle Figures",
+    "frac": "Fractions",
+    "sinf": "Scientific Inferiors",
+    "case": "Case-Sensitive Forms"
+}

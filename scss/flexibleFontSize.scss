@@ -1,0 +1,19 @@
+// https://websemantics.uk/tools/responsive-font-calculator/
+
+/* 18px @ 768px increasing to 22px @ 1200px */
+@media (min-width: 768px) {
+    :root {
+        font-size: calc(1.125rem + ((1vw - 7.68px) * 0.9259));
+        /* Note: The calc base value (1.125rem) MUST be stated in REM to maintain accessibility */
+        /* Where: 0.9259 = 100 * font-size_difference / viewport_width_difference */
+
+        /* Safari resize fix */
+        min-height: 0vw;
+    }
+}
+/* Prevent scaling beyond this breakpoint */
+@media (min-width: 1200px) {
+    :root {
+        font-size: 22px;
+    }
+}

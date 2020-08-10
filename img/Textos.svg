@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="865px" height="321px" viewBox="0 0 865 321" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Textos</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.45" font-family="Piazzolla-ThinItalic_Medium-Italic, Piazzolla" font-size="24" font-style="italic" font-weight="500" line-spacing="24">
+        <g id="Piazzolla_Desktop_V3" transform="translate(-417.000000, -7408.000000)" fill="#151525">
+            <g id="Download-Size" transform="translate(158.000000, 6948.000000)">
+                <g id="Fig-4--Speed-test" transform="translate(259.000000, 361.000000)">
+                    <g id="Textos" transform="translate(0.000000, 99.000000)">
+                        <text id="don’t-worry,-it’s-ok">
+                            <tspan x="0" y="299">don’t worry, </tspan>
+                            <tspan x="58.3778966" y="323">it’s ok</tspan>
+                        </text>
+                        <text id="don’t-worry!">
+                            <tspan x="28" y="138">don’t worry!</tspan>
+                        </text>
+                        <text id="start-worrying">
+                            <tspan x="462" y="27">start worrying</tspan>
+                        </text>
+                        <text id="well-well,-it-scalat">
+                            <tspan x="635" y="138">well well, it scalated </tspan>
+                            <tspan x="635" y="162">quickly</tspan>
+                        </text>
+                        <text id="we-have-a-problem-he">
+                            <tspan x="653" y="297">we have a </tspan>
+                            <tspan x="653" y="321">problem here</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

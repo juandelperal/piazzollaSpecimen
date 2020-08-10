@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Piazzolla";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("../fonts/Piazzolla[opsz\,wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Piazzolla";
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("../fonts/Piazzolla-Italic[opsz\,wght].woff2") format("woff2");
+}
+
+body {
+    font-family: "Piazzolla", serif;
+    font-optical-sizing: auto;
+    line-height: 1.45;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+}
+
+p,
+ul {
+    margin-bottom: 1.45em;
+}
+
+// weights from .w100 to .w900
+@for $i from 1 through 9 {
+    .w#{$i * 100} {
+        font-weight: #{$i * 100};
+    }
+}
+
+.sc {
+    font-variant: small-caps;
+}
+
+.allSc {
+    font-variant: all-small-caps;
+}
+
+.allSc {
+    font-variant: all-small-caps;
+}
+
+.roman {
+    font-feature-settings: "ss01" 1;
+}
+
+.em {
+    display: inline-block;
+    width: 0.75em;
+}
+
+
+sup {
+    font-size: 1em;
+    font-feature-settings: "sups";
+}
+
+sup {
+    font-size: 1em;
+    font-feature-settings: "subs";
+}

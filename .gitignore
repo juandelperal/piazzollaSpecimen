@@ -1,0 +1,7 @@
+.DS_Store
+.sass-cache/
+.pdf
+.zip
+node_modules
+hot
+dist
