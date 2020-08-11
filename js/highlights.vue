@@ -239,6 +239,7 @@
   border: solid 1.5px $warmGray;
   height: rem-calc(160px);
 
+
   @include mobile() {
     width: calc(100% / 4 - 3px);
   }
@@ -263,7 +264,7 @@ export default {
     components: {card},
     data() {
         return {
-            isFlipped: false
+            //
         }
     },
 }

@@ -1,8 +1,7 @@
 <template>
   <div class="scene">
     <div class="flippingCard"
-         :class="{isFlipped: isFlipped}"
-         @click="isFlipped = !isFlipped">
+         @click="flip">
       <div class="face front">
         <div class="flex">
           <slot></slot>
@@ -57,9 +56,13 @@
     text-align: center;
     font-weight: 200;
     font-size: 4rem;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: rotateY(20deg);
+    }
     p {
       width: 100%;
-      //   line-height: 1;
     }
   }
 
@@ -74,10 +77,16 @@
 
 <script>
 export default {
-    data() {
-        return {
-            isFlipped: false
+    methods: {
+        flip(event) {
+            let element = event.target.closest(".flippingCard")
+            element.classList.toggle('isFlipped')
+
+            setTimeout(() => {
+                element.classList.remove('isFlipped')
+            }, 3500)
         }
     },
+
 }
 </script>
