@@ -131,7 +131,8 @@ export default {
 .moment {
   cursor: pointer;
   border-top: solid 1px #fff;
-  padding-bottom: 1rem;
+  padding-bottom: 0;
+  margin-bottom: -1rem;
   * {
     transition: all 0.4s;
   }
@@ -177,13 +178,12 @@ export default {
       position: relative;
       overflow-y: hidden;
       height: 0;
-      padding: 0;
+      padding: 2em;
     }
   }
 
   &.active {
     border-top-color: $green;
-    padding-bottom: 3rem;
     .place {
       font-size: 1rem;
       @include desktop() {
@@ -200,7 +200,7 @@ export default {
       opacity: 1;
       height: auto;
       background-color: #fff;
-      padding: 2em;
+      margin-bottom: 4rem;
     }
   }
   &:hover,

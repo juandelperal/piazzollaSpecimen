@@ -4,7 +4,19 @@
       <div class="flex">
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>ñ</p>
+          <template v-slot:back>
+            <p>
+              ñ <code>ntilde</code>
+            </p>
+          </template>
+        </card>
+
+        <!-- Card -->
+        <card class="highlight is-2 hidden-mobile">
+          <p>
+            H<span style="font-feature-settings: 'sinf';">2</span>O
+          </p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -12,7 +24,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>↕</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -20,7 +32,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>₪</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -28,14 +40,14 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>@</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
         </card>
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>₮</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -43,7 +55,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>Ԯ</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -51,7 +63,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>₿</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -59,14 +71,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-        <!-- Card -->
-        <card class="highlight">
-          <p>Xx</p>
+          <p>₹</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -74,7 +79,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>a</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -82,7 +87,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>Иб</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -90,14 +95,41 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p style="font-feature-settings: 'frac';">3/8</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              Arbitrary fractions
+            </p>
           </template>
         </card>
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>
+            <em>fft</em>
+          </p>
+          <template v-slot:back>
+            <p>Dynamic ligatures.</p>
+          </template>
+        </card>
+
+        <!-- Card -->
+        <card class="highlight">
+          <p>ῼΰ</p>
+          <template v-slot:back>
+            <p>
+              Supports the polytonic greek orthography
+              <em>Πολυτονικό σύστημα γραφής</em>
+            </p>
+          </template>
+        </card>
+
+        <!-- Card -->
+        <card class="highlight">
+          <p lang="bg">
+            <em>
+              Дв
+            </em>
+          </p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -105,7 +137,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>&</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -113,7 +145,43 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p style="font-feature-settings: inherit;">
+            εξ
+          </p>
+          <template v-slot:back>
+            <p>
+              Polytonic greek support
+            </p>
+          </template>
+        </card>
+
+        <!-- Card -->
+        <card class="highlight">
+          <p class="sc">
+            c&
+          </p>
+          <template v-slot:back>
+            <p>Lorem ipsum dolor, sit amet.</p>
+          </template>
+        </card>
+
+
+        <!-- Card -->
+        <card class="highlight is-2 hidden-mobile">
+          <p>
+            <span style="font-feature-settings: 'pnum' 0, 'onum' 0;">36</span>
+            →
+            <span style="font-feature-settings: 'pnum' 1, 'onum' 1;">36</span>
+          </p>
+          <template v-slot:back>
+            <p>Lorem ipsum dolor, sit amet.</p>
+          </template>
+        </card>
+
+
+        <!-- Card -->
+        <card class="highlight">
+          <p>∂</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -121,14 +189,9 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-        <!-- Card -->
-        <card class="highlight">
-          <p>Xx</p>
+          <p lang="nl">
+            bíj
+          </p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -136,7 +199,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>®</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -144,7 +207,10 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>
+            m<span style="font-feature-settings: 'sups';">2</span>
+          </p>
+
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -152,14 +218,14 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p>֏</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
         </card>
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
+          <p style="font-feature-settings: 'ss01';">vii</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -167,54 +233,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Xx</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-
-        <!-- Card -->
-        <card class="highlight">
-          <p>Xx</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-
-        <!-- Card -->
-        <card class="highlight">
-          <p>Xx</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-        <!-- Card -->
-        <card class="highlight">
-          <p>Xx</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-
-        <!-- Card -->
-        <card class="highlight is-2">
-          <p>Xx</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-
-        <!-- Card -->
-        <card class="highlight">
-          <p>Xx</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-
-        <!-- Card -->
-        <card class="highlight">
-          <p>Xx</p>
+          <p>ẞß</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -238,7 +257,6 @@
 .highlight {
   border: solid 1.5px $warmGray;
   height: rem-calc(160px);
-
 
   @include mobile() {
     width: calc(100% / 4 - 3px);

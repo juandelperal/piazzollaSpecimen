@@ -6,7 +6,7 @@
           ref="cursor"></span>
     <div id="inspectorDetails"
          ref="inspector">
-      <h3><span class="sc">css</span> Styles</h3>
+      <h3><span class="sc">css</span> style</h3>
       <p v-for="(val, k) in store.inspector"
          :key="k">
         <span>{{k}}:</span>

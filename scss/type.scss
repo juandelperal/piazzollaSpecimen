@@ -59,9 +59,11 @@ ul {
 sup {
     font-size: 1em;
     font-feature-settings: "sups";
+    top: 0;
 }
 
-sup {
+sub {
     font-size: 1em;
-    font-feature-settings: "subs";
+    font-feature-settings: "sinf";
+    bottom: 0;
 }

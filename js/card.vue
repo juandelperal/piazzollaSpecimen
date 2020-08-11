@@ -54,12 +54,14 @@
   .front {
     background: #fff;
     text-align: center;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 4rem;
     transition: all 0.2s;
 
     &:hover {
-      transform: rotateY(20deg);
+      font-weight: 300;
+      background: $green;
+      //   transform: rotateY(20deg);
     }
     p {
       width: 100%;
@@ -67,9 +69,10 @@
   }
 
   .back {
-    background: $green;
+    background: $dark2;
     transform: rotateY(180deg);
     font-size: 0.8em;
+    color: $green;
   }
 }
 </style>
@@ -79,12 +82,15 @@
 export default {
     methods: {
         flip(event) {
-            let element = event.target.closest(".flippingCard")
-            element.classList.toggle('isFlipped')
+            let e = event.target.closest(".flippingCard")
 
-            setTimeout(() => {
-                element.classList.remove('isFlipped')
-            }, 3500)
+            if (!e.classList.contains('isFlipped')) {
+                e.classList.add('isFlipped')
+                setTimeout(() => {
+                    e.classList.remove('isFlipped')
+                }, 3000)
+            }
+
         }
     },
 

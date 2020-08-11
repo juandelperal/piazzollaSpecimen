@@ -85,3 +85,15 @@ a {
 .inspectable {
     cursor: url("../images/cursor+.svg") 16 16, crosshair;
 }
+
+@include mobile() {
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+@include desktop() {
+    .hidden-desktop {
+        display: none;
+    }
+}

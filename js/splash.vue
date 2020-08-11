@@ -115,8 +115,11 @@
 
 #splash {
     background: url('../images/bg.svg') center top no-repeat;
-    background-size: contain;
-    max-width: 1470px;
+    background-size: 1470px 650px;
+
+    @include mobile() {
+        background-size: 150vh auto;
+    }
 }
 .splashTitle {
   h1 {
@@ -215,7 +218,7 @@ h3 {
   text-align: right;
 }
 .dropCap {
-  color: $beige;
+  color: $green;
   //   position: absolute;
   font-weight: 100;
   float: left;
