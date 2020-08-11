@@ -48,20 +48,21 @@
   .flex {
     display: flex;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.8rem;
   }
 
   .front {
     background: #fff;
     text-align: center;
     font-weight: 100;
-    font-size: 3.8rem;
+    font-size: 3.7rem;
+    line-height: 1.3;
     transition: all 0.2s;
     overflow: hidden;
 
     &:hover {
       background: $green;
-      //   transform: rotateY(20deg);
+    //   transform: rotateY(20deg);
     }
     p {
       width: 100%;
@@ -71,7 +72,7 @@
   .back {
     background: $dark2;
     transform: rotateY(180deg);
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: $green;
   }
 }

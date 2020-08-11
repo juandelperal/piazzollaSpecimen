@@ -66,7 +66,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>a</p>
+          <p>ag</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
