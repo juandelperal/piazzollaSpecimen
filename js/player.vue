@@ -43,7 +43,8 @@
 // font-weight: 100;
 // color: $dark3;
 section {
-    background: #fff;
+  background: #fff;
+  font-weight: 100;
 }
 
 h3 {
@@ -61,26 +62,27 @@ p {
     &:hover {
       color: $dark;
       .title {
-        transition: all 0.3s;
         font-weight: 600;
         // margin-left: 2em;
         // border-bottom-color: $green;
       }
       .number {
-        transition: all 0.3s;
         font-weight: 500;
       }
     }
     &.current {
-      .number {
+      .number,
+      em {
         color: $green;
       }
     }
     .number {
+      transition: all 0.3s;
       font-feature-settings: "numr" 1;
       color: $dark4;
     }
     .title {
+      transition: all 0.3s;
       letter-spacing: 0.15em;
       margin-left: 0.6em;
       border-bottom: 1px solid transparent;
@@ -90,6 +92,7 @@ p {
       }
     }
     em {
+      transition: all 0.3s;
       margin-left: 1em;
       flex-shrink: 1;
       color: $dark4;
@@ -138,7 +141,7 @@ export default {
     methods: {
         changeSong(song) {
             this.currentSong = song
-            this.$refs.spotiframe.src = 'https://open.spotify.com/embed/track/' + song.url
+            this.$refs.spotiframe.src = 'https://open.spotify.com/embed/track/' + song.url + '?play=true'
         }
     },
 }

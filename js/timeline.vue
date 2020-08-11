@@ -4,6 +4,7 @@
     <!-- each -->
     <div class="moment"
          v-for="(moment, k) in timeline"
+         @click="setActive"
          :key="k">
       <div class="margins">
         <div class="is-row">
@@ -107,6 +108,18 @@ export default {
         ],
         };
     },
+    methods: {
+        setActive(event) {
+            let moments = document.querySelectorAll('#timeline .moment')
+            let moment = event.target.closest(".moment")
+
+            moments.forEach(e => e.classList.remove('active') )
+            moment.classList.add('active')
+        }
+    },
+    mounted() {
+        document.querySelectorAll('#timeline .moment')[0].classList.add('active')
+    }
 }
 </script>
 
@@ -116,12 +129,14 @@ export default {
 @import "../scss/variables";
 
 .moment {
-  transition: all 0.5s;
-  border-top: solid 1.5px #fff;
+  cursor: pointer;
+  border-top: solid 1px #fff;
   padding-bottom: 1rem;
+  * {
+    transition: all 0.4s;
+  }
 
   .year {
-    transition: all 0.3s;
     font-feature-settings: "tnum" 1, "onum" 1;
     font-weight: 100;
     text-align: center;
@@ -132,19 +147,21 @@ export default {
     margin-bottom: 0.6rem;
   }
   .place {
-    transition: all 0.3s;
     font-variant: all-small-caps;
     letter-spacing: 0.1em;
     font-size: 0.75rem;
     color: $dark4;
     text-align: center;
     line-height: 5rem;
-    margin-top: -3.2em;
     margin-bottom: 0;
+    margin-top: -1em;
+
+    @include desktop() {
+      margin-top: -3.2em;
+    }
   }
   .text {
     h3 {
-      transition: all 0.3s;
       font-size: 2em;
       line-height: 1.1;
       font-weight: 200;
@@ -155,7 +172,6 @@ export default {
       }
     }
     .card {
-      transition: all 0.3s;
       transform: translateX(-2em);
       opacity: 0;
       position: relative;
@@ -164,10 +180,31 @@ export default {
       padding: 0;
     }
   }
-  &:hover,
+
   &.active {
     border-top-color: $green;
     padding-bottom: 3rem;
+    .place {
+      font-size: 1rem;
+      @include desktop() {
+        transform: translateY(0.82rem);
+      }
+    }
+    .text {
+      h3 {
+        font-size: 3em;
+      }
+    }
+    .card {
+      transform: translateX(0);
+      opacity: 1;
+      height: auto;
+      background-color: #fff;
+      padding: 2em;
+    }
+  }
+  &:hover,
+  &.active {
     .year {
       color: $dark;
       font-weight: 900;
@@ -175,23 +212,12 @@ export default {
     .place {
       color: $dark;
       font-weight: 400;
-      font-size: 1rem;
-      margin-top: -2.4em;
     }
     .text {
       h3 {
         color: $dark;
         font-weight: 300;
-        font-size: 3em;
       }
-    }
-    .card {
-      // display: block;
-      transform: translateX(0);
-      opacity: 1;
-      height: auto;
-      background-color: #fff;
-      padding: 2em;
     }
   }
 }
