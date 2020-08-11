@@ -113,6 +113,11 @@
 @import "../scss/mixins";
 @import "../scss/variables";
 
+#splash {
+    background: url('../images/bg.svg') center top no-repeat;
+    background-size: contain;
+    max-width: 1470px;
+}
 .splashTitle {
   h1 {
     font-weight: 200;

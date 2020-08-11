@@ -3,7 +3,8 @@
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    src: url("../fonts/Piazzolla[opsz\,wght].woff2") format("woff2");
+    src: url("../fonts/Piazzolla[opsz\,wght].woff2") format("woff2-variations"),
+        url("../fonts/Piazzolla[opsz\,wght].woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +12,8 @@
     font-style: italic;
     font-weight: 100 900;
     font-display: swap;
-    src: url("../fonts/Piazzolla-Italic[opsz\,wght].woff2") format("woff2");
+    src: url("../fonts/Piazzolla-Italic[opsz\,wght].woff2") format("woff2-variations"),
+        url("../fonts/Piazzolla-Italic[opsz\,wght].woff2") format("woff2");
 }
 
 body {
@@ -53,7 +55,6 @@ ul {
     display: inline-block;
     width: 0.75em;
 }
-
 
 sup {
     font-size: 1em;
