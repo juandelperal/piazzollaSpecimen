@@ -45,21 +45,8 @@
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
         </card>
-        <!-- Card -->
-        <card class="highlight">
-          <p>₮</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
 
-        <!-- Card -->
-        <card class="highlight">
-          <p>Ԯ</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
+
 
         <!-- Card -->
         <card class="highlight">
@@ -87,7 +74,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>Иб</p>
+          <p>Ԯб</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -156,19 +143,8 @@
         </card>
 
         <!-- Card -->
-        <card class="highlight">
-          <p class="sc">
-            c&
-          </p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-
-
-        <!-- Card -->
         <card class="highlight is-2 hidden-mobile">
-          <p>
+          <p class="medium">
             <span style="font-feature-settings: 'pnum' 0, 'onum' 0;">36</span>
             →
             <span style="font-feature-settings: 'pnum' 1, 'onum' 1;">36</span>
@@ -178,6 +154,40 @@
           </template>
         </card>
 
+
+        <!-- Card -->
+        <card class="highlight">
+          <p>֏</p>
+          <template v-slot:back>
+            <p>Lorem ipsum dolor, sit amet.</p>
+          </template>
+        </card>
+        <!-- Card -->
+        <card class="highlight">
+          <p style="font-feature-settings: 'ss01';">vi</p>
+          <template v-slot:back>
+            <p>Roman numerals</p>
+          </template>
+        </card>
+        <!-- Card -->
+        <card class="highlight">
+          <p>ẞß</p>
+          <template v-slot:back>
+            <p>Lorem ipsum dolor, sit amet.</p>
+          </template>
+        </card>
+
+        <!-- Card -->
+        <card class="highlight is-3 hidden-mobile">
+          <p class="medium">
+            <span style="font-feature-settings: 'case' 0;">[o-x]</span>
+            →
+            <span style="font-feature-settings: 'case' 1;">[O-X]</span>
+          </p>
+          <template v-slot:back>
+            <p>Lorem ipsum dolor, sit amet.</p>
+          </template>
+        </card>
 
         <!-- Card -->
         <card class="highlight">
@@ -216,28 +226,6 @@
           </template>
         </card>
 
-        <!-- Card -->
-        <card class="highlight">
-          <p>֏</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-        <!-- Card -->
-        <card class="highlight">
-          <p style="font-feature-settings: 'ss01';">vii</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-
-        <!-- Card -->
-        <card class="highlight">
-          <p>ẞß</p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
 
       </div>
     </div>
@@ -257,6 +245,12 @@
 .highlight {
   border: solid 1.5px $warmGray;
   height: rem-calc(160px);
+
+  .medium {
+    font-size: 0.85em;
+    font-weight: 140;
+    margin-top: 0.6rem;
+  }
 
   @include mobile() {
     width: calc(100% / 4 - 3px);

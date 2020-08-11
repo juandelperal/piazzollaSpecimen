@@ -55,11 +55,11 @@
     background: #fff;
     text-align: center;
     font-weight: 100;
-    font-size: 4rem;
+    font-size: 3.8rem;
     transition: all 0.2s;
+    overflow: hidden;
 
     &:hover {
-      font-weight: 300;
       background: $green;
       //   transform: rotateY(20deg);
     }
@@ -82,6 +82,8 @@
 export default {
     methods: {
         flip(event) {
+            console.log(this.$slots)
+            console.log(this.$scopedSlots)
             let e = event.target.closest(".flippingCard")
 
             if (!e.classList.contains('isFlipped')) {
