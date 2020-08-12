@@ -17,6 +17,7 @@ import quote from './quote'
 import timeline from './timeline'
 import highlights from './highlights'
 import player from './player'
+import matrix from './matrix'
 
 // Vue.use(store)
 Vue.prototype.store = store
@@ -34,7 +35,8 @@ var app = new Vue({
         quote,
         timeline,
         highlights,
-        player
+        player,
+        matrix
     },
     mounted() {
 

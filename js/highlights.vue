@@ -209,7 +209,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>®</p>
+          <p>▶</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
