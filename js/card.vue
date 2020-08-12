@@ -31,7 +31,7 @@
     transition: transform 0.4s;
     cursor: pointer;
     transform-style: preserve-3d;
-    user-select: none;
+    // user-select: none;
   }
 
   .flippingCard.isFlipped {

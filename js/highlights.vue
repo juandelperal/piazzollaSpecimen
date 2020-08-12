@@ -32,9 +32,11 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>₪</p>
+          <p>
+            <em>fft</em>
+          </p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>Dynamic ligatures.</p>
           </template>
         </card>
 
@@ -46,8 +48,6 @@
           </template>
         </card>
 
-
-
         <!-- Card -->
         <card class="highlight">
           <p>₿</p>
@@ -58,7 +58,7 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>₹</p>
+          <p>₪</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -66,7 +66,15 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>ag</p>
+          <p>ẫġ</p>
+          <template v-slot:back>
+            <p>Lorem ipsum dolor, sit amet.</p>
+          </template>
+        </card>
+
+        <!-- Card -->
+        <card class="highlight">
+          <p>₹</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -89,26 +97,8 @@
             </p>
           </template>
         </card>
-        <!-- Card -->
-        <card class="highlight">
-          <p>
-            <em>fft</em>
-          </p>
-          <template v-slot:back>
-            <p>Dynamic ligatures.</p>
-          </template>
-        </card>
 
-        <!-- Card -->
-        <card class="highlight">
-          <p>ῼΰ</p>
-          <template v-slot:back>
-            <p>
-              Supports the polytonic greek orthography
-              <em>Πολυτονικό σύστημα γραφής</em>
-            </p>
-          </template>
-        </card>
+        <!--  -->
 
         <!-- Card -->
         <card class="highlight">
@@ -124,7 +114,10 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>&</p>
+          <p>
+            m<span style="font-feature-settings: 'sups';">2</span>
+          </p>
+
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -133,12 +126,36 @@
         <!-- Card -->
         <card class="highlight">
           <p style="font-feature-settings: inherit;">
-            εξ
+            Ψπ
           </p>
           <template v-slot:back>
             <p>
               Polytonic greek support
             </p>
+          </template>
+        </card>
+
+        <!-- Card -->
+        <card class="highlight">
+          <p>&</p>
+          <template v-slot:back>
+            <p>Lorem ipsum dolor, sit amet.</p>
+          </template>
+        </card>
+
+        <!-- Card -->
+        <card class="highlight">
+          <p style="font-feature-settings: 'ss01';">vi</p>
+          <template v-slot:back>
+            <p>Roman numerals</p>
+          </template>
+        </card>
+
+        <!-- Card -->
+        <card class="highlight">
+          <p>֏</p>
+          <template v-slot:back>
+            <p>Lorem ipsum dolor, sit amet.</p>
           </template>
         </card>
 
@@ -154,24 +171,19 @@
           </template>
         </card>
 
-
         <!-- Card -->
         <card class="highlight">
-          <p>֏</p>
+          <p>ẞß</p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
         </card>
+
         <!-- Card -->
         <card class="highlight">
-          <p style="font-feature-settings: 'ss01';">vi</p>
-          <template v-slot:back>
-            <p>Roman numerals</p>
-          </template>
-        </card>
-        <!-- Card -->
-        <card class="highlight">
-          <p>ẞß</p>
+          <p lang="nl">
+            bíj
+          </p>
           <template v-slot:back>
             <p>Lorem ipsum dolor, sit amet.</p>
           </template>
@@ -191,19 +203,9 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>∂</p>
+          <p>√∂</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
-          </template>
-        </card>
-
-        <!-- Card -->
-        <card class="highlight">
-          <p lang="nl">
-            bíj
-          </p>
-          <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>Extensive math character set</p>
           </template>
         </card>
 
@@ -217,15 +219,14 @@
 
         <!-- Card -->
         <card class="highlight">
-          <p>
-            m<span style="font-feature-settings: 'sups';">2</span>
-          </p>
-
+          <p>ῼΰ</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              Supports the polytonic greek orthography
+              <em>Πολυτονικό σύστημα γραφής</em>
+            </p>
           </template>
         </card>
-
 
       </div>
     </div>
