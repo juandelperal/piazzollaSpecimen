@@ -7,7 +7,8 @@
           <p>ñ</p>
           <template v-slot:back>
             <p>
-              ñ <code>ntilde</code>
+              <code>00F1</code>
+              <em>eñe</em> (ntilde)
             </p>
           </template>
         </card>
@@ -18,7 +19,10 @@
             H<span style="font-feature-settings: 'sinf';">2</span>O
           </p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>sinf</code>
+              Scientific Inferiors.
+            </p>
           </template>
         </card>
 
@@ -26,7 +30,10 @@
         <card class="highlight">
           <p>↕</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>ss02</code>
+              Stylistic Set 2 (Dynamic arrows and triangles)
+            </p>
           </template>
         </card>
 
@@ -36,7 +43,10 @@
             <em>fft</em>
           </p>
           <template v-slot:back>
-            <p>Dynamic ligatures.</p>
+            <p>
+              <code>liga</code>
+              Dynamic ligatures.
+            </p>
           </template>
         </card>
 
@@ -44,7 +54,10 @@
         <card class="highlight">
           <p>@</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>U+0040</code>
+              at
+            </p>
           </template>
         </card>
 
@@ -52,7 +65,10 @@
         <card class="highlight">
           <p>₿</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>U+20BF</code>
+              Bitcoin symbol
+            </p>
           </template>
         </card>
 
@@ -60,7 +76,10 @@
         <card class="highlight">
           <p>₪</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>U+20AA</code>
+              Shekel symbol
+            </p>
           </template>
         </card>
 
@@ -68,7 +87,9 @@
         <card class="highlight">
           <p>ẫġ</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              Extended Latin character set
+            </p>
           </template>
         </card>
 
@@ -76,7 +97,10 @@
         <card class="highlight">
           <p>₹</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>U+20B9</code>
+              Indian rupee
+            </p>
           </template>
         </card>
 
@@ -84,7 +108,9 @@
         <card class="highlight">
           <p>Ԯб</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              Extended cyrillic support
+            </p>
           </template>
         </card>
 
@@ -93,6 +119,7 @@
           <p style="font-feature-settings: 'frac';">3/8</p>
           <template v-slot:back>
             <p>
+              <code>frac</code>
               Arbitrary fractions
             </p>
           </template>
@@ -108,7 +135,9 @@
             </em>
           </p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              Cyrillic localization for <em>Bulgarian, Serbian</em> and more
+            </p>
           </template>
         </card>
 
@@ -119,7 +148,10 @@
           </p>
 
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>sups</code>
+              Superscript
+            </p>
           </template>
         </card>
 
@@ -139,7 +171,10 @@
         <card class="highlight">
           <p>&</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>U+0026</code>
+              ampersand
+            </p>
           </template>
         </card>
 
@@ -147,15 +182,21 @@
         <card class="highlight">
           <p style="font-feature-settings: 'ss01';">vi</p>
           <template v-slot:back>
-            <p>Roman numerals</p>
+            <p>
+              <code>ss01</code>
+              Roman numerals
+            </p>
           </template>
         </card>
 
         <!-- Card -->
         <card class="highlight">
-          <p>֏</p>
+          <p>₴</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>U+20B4</code>
+              Hryvnia symbol
+            </p>
           </template>
         </card>
 
@@ -167,7 +208,7 @@
             <span style="font-feature-settings: 'pnum' 1, 'onum' 1;">36</span>
           </p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>Lining and oldstyle numbers, both in proportional and tabular versions</p>
           </template>
         </card>
 
@@ -175,7 +216,10 @@
         <card class="highlight">
           <p>ẞß</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>U+1E9E</code>
+              Capital sharp S or <em>Eszett</em>
+            </p>
           </template>
         </card>
 
@@ -185,7 +229,9 @@
             bíj
           </p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              Language localizations for <em>Guaraní, Catalán, Dutch, Romanian</em> and more
+            </p>
           </template>
         </card>
 
@@ -197,7 +243,10 @@
             <span style="font-feature-settings: 'case' 1;">[O-X]</span>
           </p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>case</code>
+              Case-Sensitive Forms
+            </p>
           </template>
         </card>
 
@@ -213,7 +262,10 @@
         <card class="highlight">
           <p>▶</p>
           <template v-slot:back>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <p>
+              <code>U+25B6</code>
+              Arrows, triangles and useful symbols.
+            </p>
           </template>
         </card>
 
@@ -265,6 +317,14 @@
     &.is-3 {
       width: calc(300% / 7 - 3px);
     }
+  }
+  code {
+    padding: 0.1em 0.5em;
+    border-radius: 0.4em;
+    display: table;
+    font-size: 0.85em;
+    border: solid 1px $beige2;
+    color: $warmGray;
   }
 }
 </style>
