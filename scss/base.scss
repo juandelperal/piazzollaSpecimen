@@ -59,13 +59,13 @@ a {
 
 @include mobile() {
     .hidden-mobile {
-        display: none;
+        display: none !important;
     }
 }
 
 @include desktop() {
     .hidden-desktop {
-        display: none;
+        display: none !important;
     }
 }
 

@@ -18,6 +18,7 @@ import timeline from './timeline'
 import highlights from './highlights'
 import player from './player'
 import matrix from './matrix'
+import toolbar from './toolbar'
 
 // Vue.use(store)
 Vue.prototype.store = store
@@ -36,7 +37,8 @@ var app = new Vue({
         timeline,
         highlights,
         player,
-        matrix
+        matrix,
+        toolbar
     },
     mounted() {
 
