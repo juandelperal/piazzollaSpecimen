@@ -22,10 +22,12 @@
 
 .inspectorContainer {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: 10;
-  //   background-color: rgba(black, 0.1);
+//   background-color: rgba(black, 0.1);
   #inspectorDetails {
     padding: 1rem 1.5rem 1.5rem 1.5rem;
     background: #fff;

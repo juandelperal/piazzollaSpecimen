@@ -48,7 +48,7 @@ var app = new Vue({
         inspectables.forEach(inspectable => {
             inspectable.addEventListener('click', event => {
 
-                let featuresWhitelist = ["sups"]
+                let featuresWhitelist = ["sups", "sinf"]
                 let inspector = document.getElementById('inspectorDetails')
                 let cursor = document.getElementById('inspectorCursor')
 
@@ -56,7 +56,7 @@ var app = new Vue({
 
                 let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
-                if (x < vw - 250) {
+                if (x < vw / 2) {
                     inspector.style.left = x + "px"
                     inspector.style.right = null
 
@@ -76,6 +76,7 @@ var app = new Vue({
                 inspector.style.top = y + "px"
 
                 store.inspector = {
+                    "font-family": styles.fontFamily,
                     "font-weight": styles.fontWeight,
                     "font-style": styles.fontStyle,
                     "font-size": styles.fontSize,
@@ -83,11 +84,12 @@ var app = new Vue({
                     "font-variant-numeric": styles.fontVariantNumeric,
                 };
 
-                if (!styles.fontFamily.includes("Piazzolla")) {
-                    store.inspector["font-family"] = styles.fontFamily
-                }
                 if (styles.fontVariant.includes('small-caps')) {
                     store.inspector["font-variant"] = styles.fontVariant
+                }
+
+                if (!styles.fontOpticalSizing.includes('auto')) {
+                    store.inspector["font-optical-sizing"] = styles.fontOpticalSizing
                 }
 
                 for (const feature of featuresWhitelist) {
