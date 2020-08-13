@@ -23,8 +23,8 @@
                :class="{roto: !withOpsz}">
             <div class="title">
               <h3>
-                <em>Optical scale in</em>
-                type founding
+                <em>Optical scale</em>
+                in type founding
               </h3>
               <p class="small">
                 <span class="sc">Harry Carter</span>
@@ -170,10 +170,9 @@ export default {
     .text {
       font-variation-settings: "opsz" 30;
     }
-
     h1,
     h3 {
-      font-variation-settings: "opsz" 8;
+      font-variation-settings: "opsz" 10;
     }
   }
 
