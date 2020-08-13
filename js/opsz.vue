@@ -3,65 +3,63 @@
            data-scroll-section>
     <div class="margins">
 
-      <div class="sample"
-           :class="{roto: !withOpsz}">
+      <div class="sample">
         <div class="is-row">
           <div class="is-col is-5">
             <h1>Auto optical sizing</h1>
-            <div class="flex">
-              <label>off
+
+            <label>off
               <input type="checkbox"
                      class="switch"
-                     id="s1"
                      v-model="withOpsz">
               on
-              </label>
-            </div>
+            </label>
+            <p class="explanation small">
+              The family has a Optical Size axis <code>(opsz)</code>, that works automatically in every modern browser.
+            </p>
+
           </div>
-          <div class="is-col is-7">
+          <div class="is-col is-7 inspectable"
+               :class="{roto: !withOpsz}">
             <div class="title">
               <h3>
-                Dignissimos ducimus odit magnam
-                <em>consequatur.</em>
+                <em>Optical scale in</em>
+                type founding
               </h3>
               <p class="small">
-                <span class="sc">Autor</span>
-                <em>El título del libro</em>
+                <span class="sc">Harry Carter</span>
+                <em>from Typography 4, autumn of 1937</em>
               </p>
             </div>
 
             <div class="text">
-              <p class="tiny">
-                <strong>Coso</strong>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ea facilis nisi perferendis amet voluptates id odio, totam sint corrupti, placeat nihil harum sapiente sequi?
-              </p>
-              <p>
-                <span class="roman">iv</span>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ea facilis nisi perferendis amet voluptates id odio, totam sint corrupti, placeat nihil harum sapiente sequi aspernatur magnam culpa distinctio explicabo?
-              </p>
-
-              <div class="is-row is-mobile">
-                <div class="is-col">
-                  <p class="extremes big">
-                    <strong>max</strong>Min
-                  </p>
-                  <p class="extremes"
-                     style="font-size: 24px;">
-                    <strong>max</strong>Min
-                  </p>
-                  <p class="extremes"
-                     style="font-size: 10px;">
-                    <strong>max</strong>Min
-                  </p>
-                </div>
-                <div class="is-col">
-                  <p class="small">
-                    <span class="sc">fig 1.</span>
-                    <em>Weight extremes</em>
-                    <br />Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo eos eius dolores optio ipsum at veritatis. Inventore numquam ex earum, quia doloremque qui velit consequuntur. Saepe tempora molestias perspiciatis blanditiis!
-                  </p>
-                </div>
+              <div class="tiny">
+                <p class="sc">Point-size names</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="left">Name</th>
+                      <th class="right">Point size</th>
+                      <th class="right">Milimeters</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="size in sizes"
+                        :key="size.pt">
+                      <td>{{ size.name }}</td>
+                      <td class="right">{{ size.pt }}</td>
+                      <td class="right">{{ size.mm }}</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+              <p>
+                <span class="sc">For the purpose</span> of this article it is easiest to classify sizes of type in three groups —large, medium and small. The printer or designer called on to work in one of these size-groups chooses a face that shows up well in it. <em>Plantin</em>, for example, is very popular in small sizes up to 10-point; Imprint is used a great deal in 11-, 12- and 14-point; Fry's <em>Baskerville</em> is a favourite for large display. But there are no typefaces that excel in all three groups—hardly any, in
+                two of them.
+              </p>
+              <p class="smaller">
+                Typographers accept the situation, and show their skill by calling for this or that type as the best design for the scale in which they are working. It is no hardship to them to leave unused the many available poor designs in any of the three groups. For the printer, and more especially the typefounder, on the other hand, it is wasteful to make and stock type-faces in unwanted sizes.
+              </p>
             </div>
           </div>
         </div>
@@ -81,7 +79,7 @@ export default {
                 {
                     pt: '5pt',
                     name: 'Diamond',
-                    mm: '1.5875mm',
+                    mm: '1.587mm',
                 },
                 {
                     pt: '5pt',
@@ -131,7 +129,7 @@ export default {
                 {
                     pt: '18pt',
                     name: 'Great Primer',
-                    mm: '6.35mm',
+                    mm: '6.350mm',
                 },
             ]
         };
@@ -145,6 +143,28 @@ export default {
 @import "../scss/variables";
 @import "../scss/mixins";
 #opsz {
+  .smaller {
+    font-size: 0.65em;
+    margin-left: 20%;
+  }
+  .explanation {
+    color: $beige;
+    @include mobile() {
+      padding-bottom: 3em;
+      border-bottom: 1px solid $beige4;
+    }
+  }
+  label {
+    display: flex;
+    align-content: center;
+    input {
+      margin: 0.1rem 0.5rem;
+    }
+    color: $beige;
+    font-style: italic;
+    font-weight: 200;
+    margin: 0.5rem 0;
+  }
   .roto {
     font-optical-sizing: none;
     .text {
@@ -165,17 +185,28 @@ export default {
     .text {
       position: relative;
       .tiny {
-        width: 140px;
-        font-size: rem-calc(10px);
+        float: left;
+        th {
+          font-weight: 400;
+        }
+        p {
+          font-weight: 700;
+        }
+        font-size: rem-calc(11px);
+        width: 290px;
 
         @include mobile() {
           float: left;
-          margin: 0.8em 2em 1em 0;
+          margin: 0.8em 1rem 0.5rem 0;
+          max-width: 42%;
+          table {
+            width: 100%;
+          }
         }
         @include desktop() {
           position: absolute;
           margin-top: 0.8em;
-          margin-left: -170px;
+          margin-left: -13rem;
         }
       }
     }
@@ -191,9 +222,9 @@ export default {
         font-weight: 100;
       }
       p {
-        padding: 2em 0;
+        padding: 2em 0 3em;
         margin-bottom: 3em;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid $beige4;
       }
     }
     .extremes {

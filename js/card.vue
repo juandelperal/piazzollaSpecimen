@@ -18,10 +18,11 @@
 
 <style lang="scss" scoped>
 @import "../scss/variables";
+@import "../scss/mixins";
 
 .scene {
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 80px;
+  min-height: 80px;
   perspective: 600px;
   position: relative;
 
@@ -55,14 +56,14 @@
     background: #fff;
     text-align: center;
     font-weight: 100;
-    font-size: 3.7rem;
-    line-height: 1.3;
     transition: all 0.2s;
     overflow: hidden;
+    font-size: 3.7rem;
+    line-height: 1.3;
 
     &:hover {
       background: $green;
-    //   transform: rotateY(20deg);
+      //   transform: rotateY(20deg);
     }
     p {
       width: 100%;

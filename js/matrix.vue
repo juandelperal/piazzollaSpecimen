@@ -40,6 +40,8 @@ section {
       margin: 1rem 0 1.5rem;
     }
     img {
+      position: absolute;
+      right: 0;
       width: 60%;
     }
   }

@@ -73,7 +73,7 @@
         </card>
 
         <!-- Card -->
-        <card class="highlight hidden-mobile">
+        <card class="highlight">
           <p>₪</p>
           <template v-slot:back>
             <p>
@@ -305,7 +305,7 @@
   }
 
   @include mobile() {
-    width: calc(100% / 4 - 3px);
+    width: calc(100% / 3 - 3px);
   }
 
   @include desktop() {
