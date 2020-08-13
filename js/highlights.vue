@@ -73,7 +73,7 @@
         </card>
 
         <!-- Card -->
-        <card class="highlight">
+        <card class="highlight hidden-mobile">
           <p>₪</p>
           <template v-slot:back>
             <p>
@@ -162,7 +162,7 @@
           </p>
           <template v-slot:back>
             <p>
-              Polytonic greek support
+              Greek (+polytonic) support
             </p>
           </template>
         </card>
@@ -238,9 +238,8 @@
         <!-- Card -->
         <card class="highlight is-3 hidden-mobile">
           <p class="medium">
-            <span style="font-feature-settings: 'case' 0;">[o-x]</span>
-            →
-            <span style="font-feature-settings: 'case' 1;">[O-X]</span>
+            <span style="font-feature-settings: 'case' 0;">[o-n]</span>
+            <span style="font-feature-settings: 'case' 1;">[O-N]</span>
           </p>
           <template v-slot:back>
             <p>

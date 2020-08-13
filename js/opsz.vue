@@ -3,18 +3,20 @@
            data-scroll-section>
     <div class="margins">
 
-      <input type="checkbox"
-             class="switch"
-             id="s1"
-             v-model="withOpsz">
-      <label for="s1">With Optical sizing</label>
-
-      <div class="sample inspectable"
-
+      <div class="sample"
            :class="{roto: !withOpsz}">
         <div class="is-row">
           <div class="is-col is-5">
-            <h1>{{withOpsz ? 'With' : 'Without'}} auto optical sizing</h1>
+            <h1>Auto optical sizing</h1>
+            <div class="flex">
+              <label>off
+              <input type="checkbox"
+                     class="switch"
+                     id="s1"
+                     v-model="withOpsz">
+              on
+              </label>
+            </div>
           </div>
           <div class="is-col is-7">
             <div class="title">
@@ -53,7 +55,6 @@
                   </p>
                 </div>
                 <div class="is-col">
-                  <!--  -->
                   <p class="small">
                     <span class="sc">fig 1.</span>
                     <em>Weight extremes</em>
@@ -74,11 +75,67 @@
 
 export default {
     data() {
-    return {
-        withOpsz: true,
-    };
+        return {
+            withOpsz: true,
+            sizes: [
+                {
+                    pt: '5pt',
+                    name: 'Diamond',
+                    mm: '1.5875mm',
+                },
+                {
+                    pt: '5pt',
+                    name: 'Pearl',
+                    mm: '≈1.764mm',
+                },
+                {
+                    pt: '6pt',
+                    name: 'Nonpareil',
+                    mm: '≈2.117mm',
+                },
+                {
+                    pt: '7pt',
+                    name: 'Minion',
+                    mm: '≈2.469mm',
+                },
+                {
+                    pt: '8pt',
+                    name: 'Brevier',
+                    mm: '≈2.822mm',
+                },
+                {
+                    pt: '9pt',
+                    name: 'Bourgeois',
+                    mm: '3.175mm',
+                },
+                {
+                    pt: '10pt',
+                    name: 'Long Primer',
+                    mm: '≈3.528mm',
+                },
+                {
+                    pt: '11pt',
+                    name: 'Small Pica',
+                    mm: '≈3.881mm',
+                },
+                {
+                    pt: '12pt',
+                    name: 'Pica',
+                    mm: '≈4.233mm',
+                },
+                {
+                    pt: '14pt',
+                    name: 'English',
+                    mm: '≈4.939mm',
+                },
+                {
+                    pt: '18pt',
+                    name: 'Great Primer',
+                    mm: '6.35mm',
+                },
+            ]
+        };
     },
-
 }
 </script>
 
@@ -93,11 +150,10 @@ export default {
     .text {
       font-variation-settings: "opsz" 30;
     }
-    .title {
-      h1,
-      h3 {
-        font-variation-settings: "opsz" 8;
-      }
+
+    h1,
+    h3 {
+      font-variation-settings: "opsz" 8;
     }
   }
 
@@ -127,7 +183,7 @@ export default {
     h3 {
       line-height: 1.1;
       margin: 0;
-      font-weight: 800;
+      font-weight: 300;
       font-size: 2em;
     }
     .title {
