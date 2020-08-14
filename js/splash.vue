@@ -78,7 +78,7 @@
               <p class="huge">
                 2<span>x</span>
               </p>
-              <p class="small">
+              <p class="small fig">
                 <span class="allSc">
                   <strong>Fig 2</strong>
                   Variable fonts
@@ -249,7 +249,6 @@ h3 {
     color: $dark;
     font-weight: 900;
     letter-spacing: 0.05em;
-    font-feature-settings: normal;
     margin-top: -0.25em;
     @include mobile() {
       margin-top: -0.5em;
@@ -259,12 +258,8 @@ h3 {
       font-weight: 200;
     }
   }
-  .allSc,
-  .sc {
-    color: $dark;
-    letter-spacing: 0.1em;
-  }
 }
+
 
 ul {
   //   display: none;

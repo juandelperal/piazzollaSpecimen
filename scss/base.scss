@@ -111,15 +111,24 @@ section {
     height: 80px;
 }
 
-
 table {
     border-collapse: collapse;
     font-variant-numeric: lining-nums tabular-nums;
     th {
         font-variant: small-caps;
     }
-    td, th {
+    td,
+    th {
         border-bottom: 1px solid $beige4;
         padding: 0.1rem 0.2rem;
     }
+}
+
+.fig {
+    color: $dark;
+    letter-spacing: 0.15em;
+    strong {
+        margin-right: 0.7em;
+    }
+    font-variant-numeric: oldstyle-nums proportional-nums;
 }

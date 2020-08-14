@@ -15,7 +15,7 @@
               </h3>
               <p class="small">
                 <span class="sc">Harry Carter</span>
-                <em>from Typography 4, autumn of 1937</em>
+                from <em>Typography 4,</em> autumn of 1937
               </p>
             </div>
 
@@ -46,9 +46,9 @@
                   </table>
                 </div>
                 <div class="is-col is-7">
-                    <p class="sideNote">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem pariatur necessitatibus. Numquam nostrum voluptatum eligendi corporis? Aspernatur consequatur ipsa fugit nemo explicabo modi sint! Dolores ea accusamus inventore vero.
-                    </p>
+                  <p class="sideNote">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem pariatur necessitatibus. Numquam nostrum voluptatum eligendi corporis? Aspernatur consequatur ipsa fugit nemo explicabo modi sint! Dolores ea accusamus inventore vero.
+                  </p>
                   <p class="smaller">
                     Typographers accept the situation, and show their skill by calling for this or that type as the best design for the scale in which they are working. It is no hardship to them to leave unused the many available poor designs in any of the three groups. For the printer, and more especially the typefounder, on the other hand, it is wasteful to make and stock type-faces in unwanted sizes.
                   </p>
@@ -158,9 +158,8 @@ export default {
     // font-size: rem-calc(14px);
   }
   .sideNote {
-      position: absolute;
-      right: 0;
-
+    // position: absolute;
+    right: 0;
   }
   .explanation {
     color: $beige;
@@ -178,7 +177,7 @@ export default {
     }
     color: $beige;
     font-style: italic;
-    font-weight: 200;
+    // font-weight: 200;
     margin: 0.5rem 0;
   }
   .roto {
@@ -198,7 +197,6 @@ export default {
   }
 
   .sample {
-
     .sc {
       margin-right: 1em;
       letter-spacing: 0.1em;
@@ -220,21 +218,22 @@ export default {
       }
     }
 
-    h1,
-    h3 {
-      line-height: 1.1;
-      margin: 0;
-      font-weight: 300;
-      font-size: 2em;
-    }
     .title {
       h3 {
-        font-weight: 100;
+        font-size: 2em;
+        font-weight: 200;
+        margin: 0;
+
+        em {
+          font-weight: 700;
+        }
       }
       p {
-        padding: 2em 0 3em;
+        padding: 1rem 0 2rem;
         margin-bottom: 3em;
         border-bottom: 1px solid $beige4;
+        // font-weight: 100;
+        color: $dark2;
       }
     }
   }
