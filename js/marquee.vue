@@ -40,9 +40,9 @@
          v-for="line in lines">
       <div class="content">
         <div class="text"
-             style="animation-duration: 200s;">
+             style="animation-duration: 15s;">
           <p>
-            <span v-for="i in 7">
+            <span v-for="i in 2">
               <span v-for="item in line">
                 <span class="number"
                       :style="`font-weight: ${ weight } ;`">{{item.number}}</span>
@@ -139,130 +139,137 @@ export default {
 
 <style lang="scss" scoped>
 @import "../scss/variables";
+@import "../scss/mixins";
 
-.overflowable {
-  overflow: hidden;
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-}
-.controlSlider {
-  position: absolute;
-  z-index: 1;
-  margin-top: 9.5rem;
-  width: 12rem;
-  font-variant-numeric: lining-nums tabular-nums;
-  background: rgba(#fff, 1);
-  right: -100rem;
-  padding: 2rem 102rem 2rem 2rem;
-  //   * {
-  //     outline: solid #000 1px;
-  //   }
-  .sliderTitle {
-    position: absolute;
-    font-size: 0.7rem;
-    top: -1.2rem;
-    left: 0;
-    font-variant-caps: all-small-caps;
-    letter-spacing: 0.1em;
-    color: $beige4;
+#marquee {
+  @include mobile() {
+    font-size: calc(1vw * 3);
   }
-  .flex {
-    display: flex;
-    font-size: 0.7rem;
-    color: $beige4;
-    align-items: center;
-    input {
-      margin: 0.5em;
+
+  .overflowable {
+    overflow: hidden;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+  }
+  .controlSlider {
+    position: absolute;
+    z-index: 1;
+    margin-top: 9.5em;
+    width: 12em;
+    font-variant-numeric: lining-nums tabular-nums;
+    background: rgba(#fff, 1);
+    right: -100em;
+    padding: 2em 102em 2em 2em;
+    //   * {
+    //     outline: solid #000 1px;
+    //   }
+    .sliderTitle {
+      position: absolute;
+      font-size: 0.7em;
+      top: -1.4em;
+      left: 0;
+      font-variant-caps: all-small-caps;
+      letter-spacing: 0.1em;
+      color: $beige4;
+    }
+    .flex {
+      display: flex;
+      font-size: 0.7em;
+      color: $beige4;
+      align-items: center;
+      input {
+        margin: 0.5em;
+        text-align: center;
+      }
+    }
+    .actual {
+      position: absolute;
+      color: $beige4;
+      font-size: 0.087em;
       text-align: center;
+      margin-top: -2.5em;
+      margin-left: 1.7em;
+    }
+    p.extremes {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin: 0;
+      margin-right: 0.55em;
+      margin-top: -0.05em;
+      height: 0.8em;
+      font-size: 8em;
+      line-height: 0.5em;
+    }
+    .a {
+      color: $warmGray;
+      position: absolute;
+      text-align: center;
+      &.right {
+        left: 100%;
+      }
+      &.left {
+        left: 0%;
+      }
+    }
+    .mobile {
+      color: #000;
     }
   }
-  .actual {
-    position: absolute;
-    color: $beige4;
-    font-size: 0.7rem;
-    text-align: center;
-    width: 3.6rem;
-    margin-top: -1.9rem;
-  }
-  p.extremes {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin: 0;
-    margin-right: 0.55em;
-    margin-top: -0.05em;
-    height: 0.8em;
-    font-size: 8rem;
-    line-height: 0.5em;
-  }
-  .a {
-    color: $warmGray;
-    position: absolute;
-    text-align: center;
-    &.right {
-      left: 100%;
+  .marquee {
+    font-variant-numeric: oldstyle-nums tabular-nums;
+    font-weight: 100;
+    font-size: 8em;
+    color: $dark2;
+    p {
+      margin: 0;
+      line-height: 1.1;
     }
-    &.left {
-      left: 0%;
+    .number {
+      // transition: all 0.1s;
+      color: $dark;
+    }
+    .unit {
+      color: #fff;
+    }
+    .legend {
+      font-size: 0.125em;
+      font-weight: 400;
+      color: $beige;
+      vertical-align: 3.3em;
+      letter-spacing: 0.1em;
+      font-variant: all-small-caps;
+      margin-right: 4em;
     }
   }
-  .mobile {
-    color: #000;
-  }
-}
-.marquee {
-  font-variant-numeric: oldstyle-nums tabular-nums;
-  font-weight: 100;
-  font-size: 8rem;
-  color: $dark2;
-  p {
-    margin: 0;
-    line-height: 1.1;
-  }
-  .number {
-    // transition: all 0.1s;
-    color: $dark;
-  }
-  .unit {
-    color: #fff;
-  }
-  .legend {
-    font-size: 0.125em;
-    font-weight: 400;
-    color: $beige;
-    vertical-align: 3.3em;
-    letter-spacing: 0.1em;
-    font-variant: all-small-caps;
-    margin-right: 4em;
-  }
-}
-.marquee {
-  overflow: hidden;
-  .content {
-    width: 100000px;
-  }
-  .text {
-    animation-name: marqueAnimation;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    float: left;
-  }
-  .paused .text {
-    animation-play-state: paused;
-  }
-  &:nth-child(odd) {
+  .marquee {
+    overflow: hidden;
+    .content {
+      width: 100000px;
+    }
     .text {
-      animation-direction: reverse;
+      animation-name: marqueAnimation;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      float: left;
+    }
+    .paused .text {
+      animation-play-state: paused;
+    }
+    &:nth-child(odd) {
+      .text {
+        animation-direction: reverse;
+      }
     }
   }
-}
-@keyframes marqueAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
+  @keyframes marqueAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
 </style>

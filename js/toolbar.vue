@@ -3,7 +3,7 @@
     <div class="margins">
       <nav>
         <span class="logo sc">
-          <span class="black"></span> Piazzolla Type System
+          <span class="black"></span> Piazzolla <span class="hidden-mobile">Type System</span>
         </span>
         <a href="https://huertatipografica.com/en/fonts/piazolla"
            target="_blank">
