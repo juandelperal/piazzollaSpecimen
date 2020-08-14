@@ -28,6 +28,7 @@ section {
 
     .sc {
       color: $green;
+      font-weight: 600;
     }
   }
   @include mobile() {

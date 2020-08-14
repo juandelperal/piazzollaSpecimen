@@ -23,7 +23,7 @@
           <template v-slot:back>
             <p>
               <code>sinf</code>
-              Scientific Inferiors.
+              Scientific Inferiors
             </p>
           </template>
         </card>
@@ -47,7 +47,7 @@
           <template v-slot:back>
             <p>
               <code>liga</code>
-              Dynamic ligatures.
+              Dynamic ligatures
             </p>
           </template>
         </card>
@@ -111,7 +111,7 @@
           <p>Ԯб</p>
           <template v-slot:back>
             <p>
-              Extended cyrillic support
+              Extended Cyrillic support
             </p>
           </template>
         </card>
@@ -265,7 +265,7 @@
           <template v-slot:back>
             <p>
               <code>U+25B6</code>
-              Arrows, triangles and useful symbols.
+              Arrows, triangles and useful symbols
             </p>
           </template>
         </card>
@@ -275,7 +275,7 @@
           <p>ῼΰ</p>
           <template v-slot:back>
             <p>
-              Supports the polytonic greek orthography
+              Supports the polytonic Greek orthography
               <em>Πολυτονικό σύστημα γραφής</em>
             </p>
           </template>
