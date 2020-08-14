@@ -166,6 +166,8 @@ export default {
   .smaller {
     font-size: rem-calc(15px);
     margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1.6rem;
   }
 
   .sideNote {
