@@ -19,34 +19,42 @@
               </p>
             </div>
 
-            <div class="text">
-              <div class="tiny">
-                <p class="sc">Point-size names</p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class="left">Name</th>
-                      <th class="right">Point size</th>
-                      <th class="right">Milimeters</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr v-for="size in sizes"
-                        :key="size.pt">
-                      <td>{{ size.name }}</td>
-                      <td class="right">{{ size.pt }}</td>
-                      <td class="right">{{ size.mm }}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <div class="textX">
               <p>
                 <span class="sc">For the purpose</span> of this article it is easiest to classify sizes of type in three groups —large, medium and small. The printer or designer called on to work in one of these size-groups chooses a face that shows up well in it. <em>Plantin</em>, for example, is very popular in small sizes up to 10-point; Imprint is used a great deal in 11-, 12- and 14-point; Fry's <em>Baskerville</em> is a favourite for large display. But there are no typefaces that excel in all three groups—hardly any, in
                 two of them.
               </p>
-              <p class="smaller">
-                Typographers accept the situation, and show their skill by calling for this or that type as the best design for the scale in which they are working. It is no hardship to them to leave unused the many available poor designs in any of the three groups. For the printer, and more especially the typefounder, on the other hand, it is wasteful to make and stock type-faces in unwanted sizes.
-              </p>
+              <div class="is-row">
+                <div class="is-col is-5 tiny">
+                  <p class="sc">Point-size names</p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="left">Name</th>
+                        <th class="right">Point size</th>
+                        <th class="right">Milimeters</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr v-for="size in sizes"
+                          :key="size.pt">
+                        <td>{{ size.name }}</td>
+                        <td class="right">{{ size.pt }}</td>
+                        <td class="right">{{ size.mm }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="is-col is-7">
+                    <p class="sideNote">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem pariatur necessitatibus. Numquam nostrum voluptatum eligendi corporis? Aspernatur consequatur ipsa fugit nemo explicabo modi sint! Dolores ea accusamus inventore vero.
+                    </p>
+                  <p class="smaller">
+                    Typographers accept the situation, and show their skill by calling for this or that type as the best design for the scale in which they are working. It is no hardship to them to leave unused the many available poor designs in any of the three groups. For the printer, and more especially the typefounder, on the other hand, it is wasteful to make and stock type-faces in unwanted sizes.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
           <div class="is-col is-5">
@@ -147,8 +155,12 @@ export default {
 @import "../scss/mixins";
 #opsz {
   .smaller {
-    font-size: 0.65em;
-    margin-left: 20%;
+    // font-size: rem-calc(14px);
+  }
+  .sideNote {
+      position: absolute;
+      right: 0;
+
   }
   .explanation {
     color: $beige;
@@ -186,39 +198,28 @@ export default {
   }
 
   .sample {
+
     .sc {
       margin-right: 1em;
       letter-spacing: 0.1em;
     }
-    .text {
-      position: relative;
-      .tiny {
-        float: left;
-        th {
-          font-weight: 400;
-        }
-        p {
-          font-weight: 700;
-          margin-left: 0.2rem;
-        }
-        font-size: rem-calc(11px);
-        width: 290px;
 
-        @include mobile() {
-          float: right;
-          margin: 0.8em 1rem 0.5rem 0;
-          max-width: 42%;
-          table {
-            width: 100%;
-          }
-        }
-        @include desktop() {
-          position: absolute;
-          margin-top: 0.8em;
-          right: -16rem;
-        }
+    //   position: relative;
+    .tiny {
+      font-size: rem-calc(11px);
+      // float: left;
+      table {
+        width: 100%;
+      }
+      th {
+        font-weight: 400;
+      }
+      p {
+        font-weight: 700;
+        margin-left: 0.2rem;
       }
     }
+
     h1,
     h3 {
       line-height: 1.1;
@@ -234,16 +235,6 @@ export default {
         padding: 2em 0 3em;
         margin-bottom: 3em;
         border-bottom: 1px solid $beige4;
-      }
-    }
-    .extremes {
-      font-weight: 100;
-      font-size: 60px;
-      margin-bottom: 0.3rem;
-      // margin-bottom: 0;
-      // line-height: 1.1;
-      strong {
-        font-weight: 900;
       }
     }
   }

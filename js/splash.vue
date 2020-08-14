@@ -139,10 +139,10 @@
       font-size: rem-calc(192px);
 
       .is-1 {
-        margin-right: -0.3em;
+        margin-right: -0.34em;
       }
       .is-3 {
-        margin-right: 0.3em;
+        margin-right: 0.34em;
       }
     }
     @include mobile() {
@@ -181,7 +181,7 @@
     }
     &:hover {
       .value {
-        font-weight: 500;
+        // font-weight: 500;
       }
     }
   }
@@ -190,8 +190,8 @@
     background: #fff;
     font-size: rem-calc(16px);
     font-weight: 700;
-    margin-top: 2rem;
-    padding-left: 0.3em;
+    margin-top: 3rem;
+    padding: 0.3em 0.5em 0.5em;
     transition: all 0.3s;
     &:hover {
       padding-left: 1em;
