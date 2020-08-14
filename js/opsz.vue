@@ -6,17 +6,19 @@
       <div class="sample">
         <div class="is-row">
           <div class="is-col is-5">
-            <h1>Auto optical sizing</h1>
+            <div class="controls">
+              <h1>Auto optical sizing</h1>
 
-            <label>off
-              <input type="checkbox"
-                     class="switch"
-                     v-model="withOpsz">
-              on
-            </label>
-            <p class="explanation small">
-              The family has a Optical Size axis <code>(opsz)</code>, that works automatically in every modern browser.
-            </p>
+              <label>off
+                <input type="checkbox"
+                       class="switch"
+                       v-model="withOpsz">
+                on
+              </label>
+              <p class="explanation small">
+                The family has a Optical Size axis <code>(opsz)</code>, that works automatically in every modern browser.
+              </p>
+            </div>
 
           </div>
           <div class="is-col is-7 inspectable"
@@ -177,6 +179,10 @@ export default {
   }
 
   .sample {
+    .controls {
+      background: $beige5;
+      padding: 1rem;
+    }
     .sc {
       margin-right: 1em;
       letter-spacing: 0.1em;

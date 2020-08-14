@@ -167,16 +167,16 @@ export default {
     .sliderTitle {
       position: absolute;
       font-size: 0.7em;
-      top: -1.4em;
+      top: -1.5em;
       left: 0;
       font-variant-caps: all-small-caps;
       letter-spacing: 0.1em;
-      color: $beige4;
+      color: $beige2;
     }
     .flex {
       display: flex;
       font-size: 0.7em;
-      color: $beige4;
+      color: $beige3;
       align-items: center;
       input {
         margin: 0.5em;
@@ -185,7 +185,7 @@ export default {
     }
     .actual {
       position: absolute;
-      color: $beige4;
+      color: $beige3;
       font-size: 0.087em;
       text-align: center;
       margin-top: -2.5em;

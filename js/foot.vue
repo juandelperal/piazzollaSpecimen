@@ -17,7 +17,7 @@
         <div class="is-col">
           <h4>Piazzolla's web-specimen </h4>
           <p>
-            Designed and coded by Lucía Domenech and Juan Pablo del Peral.
+            Designed and coded by <a href="mailto:lucia.domenech@gmail.com">Lucía Domenech</a> and Juan Pablo del Peral.
           </p>
         </div>
         <div class="is-col is-5">
@@ -63,32 +63,36 @@
 @import "../scss/variables";
 @import "../scss/mixins";
 footer {
-    // color: $beige2;
-    // background: #fff;
-    // border-top: 1px solid $beige4;
+  // color: $beige2;
+  // background: #fff;
+  // border-top: 1px solid $beige4;
 
-//   background: $beige2;
-//   color: #fff;
+  background: $dark;
+  color: $beige;
 
-  background: rgba($beige, 0.1);
-  color: $dark4;
+  //   background: rgba($beige, 0.1);
+  //   color: $dark4;
 
-    // background: $green;
-    // color: $dark4;
+  // background: $green;
+  // color: $dark4;
 
   padding: 3em 0;
-  font-weight: 300;
+  font-weight: 100;
   font-size: rem-calc(15px);
   margin-top: 4rem;
 
   p {
     a {
-      color: $dark;
+      color: #fff;
     }
   }
 
   h4 {
     margin-bottom: 1em;
+    color: #fff;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: .1em;
   }
 
   ul li {
@@ -101,7 +105,7 @@ footer {
       display: inline-block;
       &:hover {
         //   background: $green;
-        color: $dark;
+        color: #fff;
         font-weight: 600;
       }
     }

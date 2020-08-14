@@ -90,9 +90,12 @@
             </div>
           </div>
           <div class="is-col inspectable is-7 relative is-offset-1">
-            <p class="preUl">
+            <p>
               <span class="roman">iii</span>
               It also supports advanced OpenType features such as small caps, dynamic ligatures and fractions, four set of figures, super and subscript characters, ordinals and language-specific variations for Catalan, Guaraní, Dutch, Turkish, Romanian, Serbian, Bulgarian, Bashkir, among others.
+            </p>
+            <p>
+              The family has Weight and Optical Size axes. With predefined styles and custom locations, Piazzolla will help you to build solid text and sharp headlines.
             </p>
             <ul>
               <li v-for="(name, key) in features"
@@ -249,8 +252,8 @@ h3 {
     font-feature-settings: normal;
     margin-top: -0.25em;
     @include mobile() {
-    margin-top: -0.5em;
-  }
+      margin-top: -0.5em;
+    }
     span {
       font-size: 6rem;
       font-weight: 200;
@@ -264,6 +267,7 @@ h3 {
 }
 
 ul {
+  //   display: none;
   padding-left: 0;
   li::before {
     content: "";
