@@ -3,7 +3,10 @@
     <div class="margins">
       <div class="is-row">
         <div class="is-col">
-            Made with love by
+            <h4>Piazzolla</h4>
+            <p>
+                Designed with love by  Huerta Tipográfica
+            </p>
         </div>
       </div>
     </div>
