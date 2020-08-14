@@ -71,8 +71,16 @@ p {
     em {
       transition: all 0.3s;
       margin-left: 1em;
-      flex-shrink: 1;
+    //   flex-shrink: 1;
       color: $dark4;
+      ::before {
+        content: "▶";
+        color: $green;
+        // font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        // margin-left: -1em;
+      }
     }
   }
 }

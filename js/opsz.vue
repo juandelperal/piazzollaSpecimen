@@ -50,7 +50,7 @@
              :class="{roto: !withOpsz}">
           <div class="is-col inspectable is-7">
             <p class="smaller">
-              <em>Plantin</em>, for example, is very popular in small sizes up to 10-point; Imprint is used a great deal in 11-, 12- and 14-point; Fry's <em>Baskerville</em> is a favourite for large display. But there are no typefaces that excel in all three groups—hardly any, in two of them.
+              <em>Plantin</em>, for example, is very popular in small sizes up to 10-point; <em>Imprint</em> is used a great deal in 11-, 12- and 14-point; Fry's <em>Baskerville</em> is a favourite for large display. But there are no typefaces that excel in all three groups—hardly any, in two of them.
             </p>
             <p>Typographers accept the situation, and show their skill by calling for this or that type as the best design for the scale in which they are working. It is no hardship to them to leave unused the many available poor designs in any of the three groups. For the printer, and more especially the typefounder, on the other hand, it is wasteful to make and stock type-faces in unwanted sizes.</p>
 
