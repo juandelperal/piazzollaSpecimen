@@ -10,7 +10,8 @@
                  target="_blank">
                  Huerta Tipográfica
               </a>
-            </nobr> with the valuable help of Panagiotis Haratzopoulos, Krassen Krestev and the Google Fonts team.
+            </nobr> with the valuable help of Panagiotis Haratzopoulos, Krassen Krestev, the Google Fonts team and <a target="_blank"
+               href="https://github.com/huertatipografica/piazzolla/blob/master/CONTRIBUTORS.txt">more people</a>.
           </p>
         </div>
         <div class="is-col">
@@ -62,11 +63,22 @@
 @import "../scss/variables";
 @import "../scss/mixins";
 footer {
-  color: $dark3;
-  background: $beige4;
+    // color: $beige2;
+    // background: #fff;
+    // border-top: 1px solid $beige4;
+
+//   background: $beige2;
+//   color: #fff;
+
+  background: rgba($beige, 0.1);
+  color: $dark4;
+
+    // background: $green;
+    // color: $dark4;
+
   padding: 3em 0;
   font-weight: 300;
-  font-size: rem-calc(16px);
+  font-size: rem-calc(15px);
   margin-top: 4rem;
 
   p {
@@ -97,7 +109,7 @@ footer {
   @include mobile() {
     text-align: center;
     p {
-        margin-bottom: 2rem;
+      margin-bottom: 2rem;
     }
     ul li {
       border-bottom: 1px solid $beige4;

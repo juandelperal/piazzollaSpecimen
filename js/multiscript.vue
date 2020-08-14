@@ -13,7 +13,7 @@
             Ο όρος <span class="sc">Αρμονία</span> σήμαινε στην αρχαία Ελλάδα γενικά την αρμογή, τη σύνδεση, το ταίριασμα των μερών ενός δομημένου συνόλου (π.χ. των λίθων ενός οικοδομήματος, των ουράνιων σωμάτων στο σύμπαν) και ταυτόχρονα αξιολογούσε θετικά τη συμμετρία, την ευρυθμία, τις σωστές αναλογίες, την τέλεια εφαρμογή των δομικών στοιχείων. Αποτέλεσμα της αρμονίας σύμφωνα με τις αισθητικές λήψεις από αρχαιοτάτων χρόνων ήταν το ωραίο. Στη μουσική χρησιμοποιήθηκε η λέξη ευρύτατα και με διαφορετικές σημασίες.
           </p>
           <p class="credits">
-            With the valuable help of Panagiotis Haratzopoulos and Sol Matas.
+            Greek designed with the help of Panagiotis Haratzopoulos and Sol Matas.
           </p>
         </div>
 
@@ -38,7 +38,7 @@
             <span class="sc">Гармо́ния</span> (др.-греч. <em>ἁρμονία</em> — связь, порядок; строй, лад; слаженность, соразмерность, стройность) — комплекс понятий теории музыки. В научной перспективе это представление приводит к композиционно-техническому понятию гармонии как объединения звуков в созвучия и их закономерного последования. Гармония как научная и учебно-практическая дисциплина изучает звуковысотную организацию музыки — как <em>многоголосной</em>, так и <em>одноголосной</em>.
           </p>
           <p class="credits">
-            Made with the valuable help of Krassen Krestev
+            Cyrillic script designed with the valuable help of Krassen Krestev.
           </p>
         </div>
 
@@ -59,7 +59,7 @@
     letter-spacing: 0.15em;
     font-weight: 200;
     color: $beige;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.5rem;
     margin-top: 1.5rem;
     font-size: 0.8em;
     //   color: $green;
@@ -67,7 +67,7 @@
 
   h3 {
     border-top: 1px solid $beige3;
-    padding: 0.3em 0;
+    padding: 0.2rem 0;
     margin-top: 0;
     margin-bottom: 1.5rem;
     font-size: 1.6em;
