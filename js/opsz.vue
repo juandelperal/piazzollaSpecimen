@@ -5,22 +5,7 @@
 
       <div class="sample">
         <div class="is-row">
-          <div class="is-col is-5">
-            <div class="controls">
-              <h1>Auto optical sizing</h1>
 
-              <label>off
-                <input type="checkbox"
-                       class="switch"
-                       v-model="withOpsz">
-                on
-              </label>
-              <p class="explanation small">
-                The family has a Optical Size axis <code>(opsz)</code>, that works automatically in every modern browser.
-              </p>
-            </div>
-
-          </div>
           <div class="is-col is-7 inspectable"
                :class="{roto: !withOpsz}">
             <div class="title">
@@ -63,6 +48,22 @@
                 Typographers accept the situation, and show their skill by calling for this or that type as the best design for the scale in which they are working. It is no hardship to them to leave unused the many available poor designs in any of the three groups. For the printer, and more especially the typefounder, on the other hand, it is wasteful to make and stock type-faces in unwanted sizes.
               </p>
             </div>
+          </div>
+          <div class="is-col is-5">
+            <div class="controls">
+              <h4>Auto optical sizing</h4>
+
+              <label>off
+                <input type="checkbox"
+                       class="switch"
+                       v-model="withOpsz">
+                on
+              </label>
+              <p class="explanation small">
+                The family has a Optical Size axis <code>(opsz)</code>, that works automatically in every modern browser.
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -158,6 +159,7 @@ export default {
   }
   label {
     display: flex;
+    // display: none;
     align-content: center;
     input {
       margin: 0.1rem 0.5rem;
@@ -172,17 +174,18 @@ export default {
     .text {
       font-variation-settings: "opsz" 30;
     }
-    h1,
     h3 {
       font-variation-settings: "opsz" 10;
     }
   }
+  .controls {
+    display: none;
+    background: $beige5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
 
   .sample {
-    .controls {
-      background: $beige5;
-      padding: 1rem;
-    }
     .sc {
       margin-right: 1em;
       letter-spacing: 0.1em;
@@ -202,7 +205,7 @@ export default {
         width: 290px;
 
         @include mobile() {
-          float: left;
+          float: right;
           margin: 0.8em 1rem 0.5rem 0;
           max-width: 42%;
           table {
@@ -212,7 +215,7 @@ export default {
         @include desktop() {
           position: absolute;
           margin-top: 0.8em;
-          margin-left: -13rem;
+          right: -16rem;
         }
       }
     }

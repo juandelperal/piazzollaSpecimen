@@ -105,7 +105,7 @@ footer {
       display: inline-block;
       &:hover {
         //   background: $green;
-        color: #fff;
+        color: $green;
         font-weight: 600;
       }
     }
