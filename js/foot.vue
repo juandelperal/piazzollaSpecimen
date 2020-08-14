@@ -5,7 +5,8 @@
         <div class="is-col">
           <h4>Piazzolla</h4>
           <p>
-            Designed with love by Juan Pablo del Peral<nobr>
+            Designed with love by Juan Pablo del Peral for
+            <nobr>
               <a href="https://huertatipografica.com/"
                  target="_blank">
                  Huerta Tipográfica
@@ -20,7 +21,9 @@
             Designed and coded by <a href="mailto:lucia.domenech@gmail.com">Lucía Domenech</a> and Juan Pablo del Peral.
           </p>
         </div>
-        <div class="is-col is-5">
+        <div class="is-col">
+        </div>
+        <div class="is-col">
           <h4>&nbsp;</h4>
           <ul>
 
@@ -48,7 +51,7 @@
             <li>
               <a href="https://huertatipografica.com/"
                  target="_blank">
-                Huerta Tipografica
+                Huerta Tipográfica
               </a>
             </li>
 
@@ -92,7 +95,7 @@ footer {
     color: #fff;
     font-weight: 400;
     font-variant: small-caps;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
   }
 
   ul li {
