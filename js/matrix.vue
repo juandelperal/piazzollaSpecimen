@@ -33,6 +33,7 @@ section {
   @include mobile() {
     .margins {
       display: flex;
+      min-height: 10rem;
     }
     p {
       font-size: 0.7rem;
@@ -42,7 +43,9 @@ section {
     img {
       position: absolute;
       right: 0;
-      width: 60%;
+      top: 0;
+      height: 100%;
+      max-width: 75%;
     }
   }
 

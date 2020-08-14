@@ -39,8 +39,7 @@
     <div class="marquee"
          v-for="line in lines">
       <div class="content">
-        <div class="text"
-             style="animation-duration: 15s;">
+        <div class="text">
           <p>
             <span v-for="i in 2">
               <span v-for="item in line">
@@ -149,13 +148,14 @@ export default {
   .overflowable {
     overflow: hidden;
     position: absolute;
-    height: 100vh;
+    margin-top: 8em;
+    height: 14em;
     width: 100vw;
   }
   .controlSlider {
     position: absolute;
     z-index: 1;
-    margin-top: 9.5em;
+    margin-top: 1.5em;
     width: 12em;
     font-variant-numeric: lining-nums tabular-nums;
     background: rgba(#fff, 1);
@@ -249,6 +249,7 @@ export default {
       width: 100000px;
     }
     .text {
+      animation-duration: 35s;
       animation-name: marqueAnimation;
       animation-timing-function: linear;
       animation-iteration-count: infinite;

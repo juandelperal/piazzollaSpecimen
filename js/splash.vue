@@ -60,7 +60,7 @@
             iazzolla has a distinctive voice that conveys a personal style, especially in display sizes. It also has great performance and readability in small point sizes and long texts, both for screen and printing.
           </p>
           <div class="is-col is-3 is-offset-1 inspectable">
-            <p class="small">
+            <p class="small is-small-col">
               1. Piazzolla has more than 2300 characters and supports 210+ languages accross all continents that use the Latin, Greek and Cyrillic scripts.
             </p>
           </div>
@@ -73,19 +73,21 @@
         </div>
 
         <div class="is-row sideDetails">
-          <div class="is-col inspectable is-3 is-offset-1">
-            <p class="huge">
-              2<span>x</span>
-            </p>
-            <p class="small">
-              <span class="allSc">
-                <strong>Fig 2</strong>
-                Variable fonts
-              </span>
-            </p>
-            <p class="small">
-              The family has <em>Weight</em> and <em>Optical Size</em> axes. With predefined styles and custom locations, Piazzolla will help you to build solid text and sharp headlines.
-            </p>
+          <div class="is-col is-small-col inspectable is-3 is-offset-1">
+            <div class="is-small-col">
+              <p class="huge">
+                2<span>x</span>
+              </p>
+              <p class="small">
+                <span class="allSc">
+                  <strong>Fig 2</strong>
+                  Variable fonts
+                </span>
+              </p>
+              <p class="small">
+                The family has <em>Weight</em> and <em>Optical Size</em> axes. With predefined styles and custom locations, Piazzolla will help you to build solid text and sharp headlines.
+              </p>
+            </div>
           </div>
           <div class="is-col inspectable is-7 relative is-offset-1">
             <p class="preUl">
@@ -114,12 +116,12 @@
 @import "../scss/variables";
 
 #splash {
-    background: url('../images/bg.svg') center top no-repeat;
-    background-size: 1470px 650px;
+  background: url("../images/bg.svg") center top no-repeat;
+  background-size: 1470px 650px;
 
-    @include mobile() {
-        background-size: 150vh auto;
-    }
+  @include mobile() {
+    background-size: 150vh auto;
+  }
 }
 .splashTitle {
   h1 {
@@ -197,7 +199,7 @@
 h3 {
   font-size: rem-calc(48px * 0.75);
   font-weight: 200;
-  line-height: 1.1;
+  line-height: 1.15;
   margin: 0 0 0.5em;
   color: $beige;
   margin-bottom: 3em;
@@ -229,6 +231,11 @@ h3 {
   margin-left: -0.13em;
   //   text-shadow: -2px 2px 0 $warmGray, -3px 3px 0 $green;
 }
+.is-small-col {
+  @include mobile() {
+    margin: 1rem 2rem;
+  }
+}
 .sideDetails {
   p {
     margin: 0;
@@ -241,6 +248,9 @@ h3 {
     letter-spacing: 0.05em;
     font-feature-settings: normal;
     margin-top: -0.25em;
+    @include mobile() {
+    margin-top: -0.5em;
+  }
     span {
       font-size: 6rem;
       font-weight: 200;

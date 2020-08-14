@@ -3,10 +3,55 @@
     <div class="margins">
       <div class="is-row">
         <div class="is-col">
-            <h4>Piazzolla</h4>
-            <p>
-                Designed with love by  Huerta Tipográfica
-            </p>
+          <h4>Piazzolla</h4>
+          <p>
+            Designed with love by <nobr>
+              <a href="https://huertatipografica.com/"
+                 target="_blank">
+                 Huerta Tipográfica
+              </a>
+            </nobr> with the valuable help of Panagiotis Haratzopoulos, Krassen Krestev and the Google Fonts team.
+          </p>
+        </div>
+        <div class="is-col">
+          <h4>Piazzolla's web-specimen </h4>
+          <p>
+            Designed and coded by Lucía Domenech and Juan Pablo del Peral.
+          </p>
+        </div>
+        <div class="is-col is-5">
+          <h4>&nbsp;</h4>
+          <ul>
+
+            <li>
+              <a href="https://huertatipografica.com/en/fonts/piazolla"
+                 target="_blank">
+                Download
+              </a>
+            </li>
+
+            <li>
+              <a href="https://fonts.google.com/specimen/Piazzolla"
+                 target="_blank">
+                Use in Google Fonts
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/huertatipografica/piazzolla"
+                 target="_blank">
+                Contribute
+              </a>
+            </li>
+
+            <li>
+              <a href="https://huertatipografica.com/"
+                 target="_blank">
+                Huerta Tipografica
+              </a>
+            </li>
+
+          </ul>
         </div>
       </div>
     </div>
@@ -17,7 +62,46 @@
 @import "../scss/variables";
 @import "../scss/mixins";
 footer {
-  background: $beige;
+  color: $dark3;
+  background: $beige4;
   padding: 3em 0;
+  font-weight: 300;
+  font-size: rem-calc(16px);
+  margin-top: 4rem;
+
+  p {
+    a {
+      color: $dark;
+    }
+  }
+
+  h4 {
+    margin-bottom: 1em;
+  }
+
+  ul li {
+    :hover::before {
+      margin-left: -0.8em;
+    }
+    a {
+      transition: all 0.3s;
+      padding: 0.3em;
+      display: inline-block;
+      &:hover {
+        //   background: $green;
+        color: $dark;
+        font-weight: 600;
+      }
+    }
+  }
+  @include mobile() {
+    text-align: center;
+    p {
+        margin-bottom: 2rem;
+    }
+    ul li {
+      border-bottom: 1px solid $beige4;
+    }
+  }
 }
 </style>

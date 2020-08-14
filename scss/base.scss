@@ -35,6 +35,7 @@ ul {
         padding-left: 0;
     }
     li::before {
+        transition: all 0.1s;
         content: "▶";
         color: $green;
         font-weight: bold;
