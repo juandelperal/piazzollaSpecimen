@@ -19,6 +19,8 @@ import highlights from './highlights'
 import player from './player'
 import matrix from './matrix'
 import toolbar from './toolbar'
+import multiscript from './multiscript'
+import foot from './foot'
 
 // Vue.use(store)
 Vue.prototype.store = store
@@ -38,7 +40,9 @@ var app = new Vue({
         highlights,
         player,
         matrix,
-        toolbar
+        toolbar,
+        multiscript,
+        foot
     },
     mounted() {
 

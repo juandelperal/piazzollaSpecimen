@@ -77,9 +77,9 @@ export default {
             withOpsz: true,
             sizes: [
                 {
-                    pt: '5pt',
+                    pt: '4.5pt',
                     name: 'Diamond',
-                    mm: '1.587mm',
+                    mm: '1.588mm',
                 },
                 {
                     pt: '5pt',
@@ -190,6 +190,7 @@ export default {
         }
         p {
           font-weight: 700;
+          margin-left: 0.2rem;
         }
         font-size: rem-calc(11px);
         width: 290px;

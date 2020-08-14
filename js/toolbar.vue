@@ -35,7 +35,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 9;
   font-size: 0.8em;
   //   border-bottom: solid 2px $warmGray;
   font-weight: 200;
@@ -59,7 +59,7 @@ nav {
     transition: all 0.3s;
     &:hover {
       background: $green;
-      color: #fff;
+      color: $dark;
     }
     // background: $green;
   }
