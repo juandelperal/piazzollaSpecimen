@@ -2,33 +2,17 @@
   <section id="player"
            data-scroll-section>
     <div class="margins">
-      <h3>Music player</h3>
-      <div class="is-row">
-        <div class="is-col is-9">
-          <div v-for="(song, k)  in songs"
-               :key="k">
-            <p>
-              <a href
-                 @click.prevent="changeSong(song)"
-                 :class="{current: currentSong == song}">
-                <span class="number">0{{ k + 1 }}</span>
-                <span class="title sc">{{ song.title }}</span>
-                <em>{{ song.instruments }}</em>
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="is-col is-3">
-          <div class="embed-container">
-            <iframe ref="spotiframe"
-                    src
-                    width="300"
-                    height="80"
-                    frameborder="0"
-                    allowtransparency="true"
-                    allow="encrypted-media"></iframe>
-          </div>
-        </div>
+      <h3>This is Astor Piazzolla</h3>
+      <div v-for="(song, k)  in songs"
+           :key="k">
+        <p>
+          <a :href="'https://open.spotify.com/track/' + song.url"
+             target="_blank">
+            <span class="number">0{{ k + 1 }}</span>
+            <span class="title sc">{{ song.title }}</span>
+            <em>{{ song.instruments }}</em>
+          </a>
+        </p>
       </div>
     </div>
   </section>
@@ -45,6 +29,7 @@
 section {
   background: #fff;
   font-weight: 100;
+  padding: 3rem 0 4rem;
 }
 
 h3 {
@@ -69,8 +54,6 @@ p {
       .number {
         font-weight: 500;
       }
-    }
-    &.current {
       .number,
       em {
         color: $green;
@@ -136,12 +119,6 @@ export default {
                 },
             ],
             currentSong: false,
-        }
-    },
-    methods: {
-        changeSong(song) {
-            this.currentSong = song
-            this.$refs.spotiframe.src = 'https://open.spotify.com/embed/track/' + song.url + '?play=true'
         }
     },
 }
