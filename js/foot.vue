@@ -5,7 +5,7 @@
         <div class="is-col">
           <h4>Piazzolla</h4>
           <p>
-            Designed with love by <nobr>
+            Designed with love by Juan Pablo del Peral<nobr>
               <a href="https://huertatipografica.com/"
                  target="_blank">
                  Huerta Tipográfica
