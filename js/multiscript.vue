@@ -1,7 +1,7 @@
 <template>
   <section id="multiscript">
     <div class="margins">
-      <h1>Multiscript</h1>
+      <h3>Multiscript</h3>
       <div class="is-row">
         <!-- Scr -->
         <div class="is-col">
@@ -64,16 +64,17 @@
     font-size: 0.8em;
     //   color: $green;
   }
-
-  h3 {
-    border-top: 1px solid $beige3;
-    padding: 0.2rem 0;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    font-size: 1.6em;
-    em {
-      font-weight: 100;
-      color: $beige;
+  .is-row {
+    h3 {
+      border-top: 1px solid $beige3;
+      padding: 0.2rem 0;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      font-size: 1.6em;
+      em {
+        font-weight: 100;
+        color: $beige;
+      }
     }
   }
   .credits {

@@ -138,3 +138,9 @@ table {
     }
     font-variant-numeric: oldstyle-nums proportional-nums;
 }
+
+h3 {
+    font-size: rem-calc(40px);
+    font-weight: 400;
+    margin-bottom: 1em;
+}

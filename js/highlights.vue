@@ -1,6 +1,8 @@
 <template>
   <section id="highlights">
     <div class="margins">
+      <h3>Highlights</h3>
+
       <div class="flex">
         <!-- Card -->
         <card class="highlight">

@@ -164,7 +164,7 @@ export default {
   }
 
   .smaller {
-    font-size: rem-calc(16px);
+    font-size: rem-calc(15px);
     margin-left: 15%;
   }
 

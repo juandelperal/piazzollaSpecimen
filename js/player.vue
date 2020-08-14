@@ -31,12 +31,6 @@ section {
   font-weight: 100;
   padding: 3rem 0 4rem;
 }
-
-h3 {
-  font-size: rem-calc(48px);
-  font-weight: 400;
-  margin-bottom: 1em;
-}
 p {
   font-size: rem-calc(24px);
   margin-bottom: 0.4em;

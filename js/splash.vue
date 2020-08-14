@@ -85,7 +85,7 @@
                 </span>
               </p>
               <p class="small">
-                The family has <em>Weight</em> and <em>Optical Size</em> axes. With predefined styles and custom locations, Piazzolla will help you to build solid text and sharp headlines.
+                The variable fonts technology brings more possibilities to users and allows them to control the type more acurately.
               </p>
             </div>
           </div>
@@ -95,7 +95,8 @@
               It also supports advanced OpenType features such as small caps, dynamic ligatures and fractions, four set of figures, super and subscript characters, ordinals and language-specific variations for Catalan, Guaraní, Dutch, Turkish, Romanian, Serbian, Bulgarian, Bashkir, among others.
             </p>
             <p>
-              The family has Weight and Optical Size axes. With predefined styles and custom locations, Piazzolla will help you to build solid text and sharp headlines.
+              <span class="roman">iv</span>
+              The family has <em>Weight</em> and <em>Optical Size</em> axes. With predefined styles and custom locations, Piazzolla will help you to build solid text and sharp headlines.
             </p>
             <ul>
               <li v-for="(name, key) in features"
@@ -240,7 +241,7 @@ h3 {
   }
 }
 .sideDetails {
-  p {
+  .fig {
     margin: 0;
   }
   .huge {
@@ -249,7 +250,8 @@ h3 {
     color: $dark;
     font-weight: 900;
     letter-spacing: 0.05em;
-    margin-top: -0.25em;
+    margin-top: -2.4em;
+    margin: 0;
     @include mobile() {
       margin-top: -0.5em;
     }
@@ -260,9 +262,8 @@ h3 {
   }
 }
 
-
 ul {
-  //   display: none;
+  display: none;
   padding-left: 0;
   li::before {
     content: "";
