@@ -44,6 +44,7 @@
 nav {
   display: flex;
   margin: 0;
+  line-height: 2.2em;
   .logo {
     margin-right: 0.8em;
   }
@@ -54,7 +55,7 @@ nav {
     // &.hidden-mobile {
     //   display: none;
     // }
-    padding: 0 0.8em 0.4em;
+    padding: 0 0.8em 0.2em;
     //   font-weight: 200;
     transition: all 0.3s;
     &:hover {

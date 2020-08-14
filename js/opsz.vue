@@ -1,6 +1,7 @@
 <template>
   <section id="opsz"
            data-scroll-section>
+
     <div class="margins">
 
       <div class="sample">
@@ -19,59 +20,62 @@
               </p>
             </div>
 
-            <div class="textX">
+            <div class="text">
               <p>
-                <span class="sc">For the purpose</span> of this article it is easiest to classify sizes of type in three groups —large, medium and small. The printer or designer called on to work in one of these size-groups chooses a face that shows up well in it. <em>Plantin</em>, for example, is very popular in small sizes up to 10-point; Imprint is used a great deal in 11-, 12- and 14-point; Fry's <em>Baskerville</em> is a favourite for large display. But there are no typefaces that excel in all three groups—hardly any, in
-                two of them.
+                <span class="sc">For the purpose</span> of this article it is easiest to classify sizes of type in three groups —large, medium and small. The printer or designer called on to work in one of these size-groups chooses a face that shows up well in it.
               </p>
-              <div class="is-row">
-                <div class="is-col is-5 tiny">
-                  <p class="sc">Point-size names</p>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th class="left">Name</th>
-                        <th class="right">Point size</th>
-                        <th class="right">Milimeters</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr v-for="size in sizes"
-                          :key="size.pt">
-                        <td>{{ size.name }}</td>
-                        <td class="right">{{ size.pt }}</td>
-                        <td class="right">{{ size.mm }}</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="is-col is-7">
-                  <p class="sideNote">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem pariatur necessitatibus. Numquam nostrum voluptatum eligendi corporis? Aspernatur consequatur ipsa fugit nemo explicabo modi sint! Dolores ea accusamus inventore vero.
-                  </p>
-                  <p class="smaller">
-                    Typographers accept the situation, and show their skill by calling for this or that type as the best design for the scale in which they are working. It is no hardship to them to leave unused the many available poor designs in any of the three groups. For the printer, and more especially the typefounder, on the other hand, it is wasteful to make and stock type-faces in unwanted sizes.
-                  </p>
-                </div>
-              </div>
 
             </div>
           </div>
-          <div class="is-col is-5">
+          <div class="is-col is-4 is-offset-1">
             <div class="controls">
-              <h4>Auto optical sizing</h4>
+              <div class="flex">
+                <h4>Auto optical sizing</h4>
 
-              <label>off
                 <input type="checkbox"
                        class="switch"
                        v-model="withOpsz">
-                on
-              </label>
-              <p class="explanation small">
-                The family has a Optical Size axis <code>(opsz)</code>, that works automatically in every modern browser.
-              </p>
+              </div>
+              <div class="explanation">
+                <p class="fig sc small">Variable fonts</p>
+                <p class="small">
+                  Piazzolla allows you to improve the quelity of text legibility in small sizes. This works automatically in modern browsers.
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
 
+        <div class="is-row"
+             :class="{roto: !withOpsz}">
+          <div class="is-col inspectable is-7">
+            <p class="smaller">
+              <em>Plantin</em>, for example, is very popular in small sizes up to 10-point; Imprint is used a great deal in 11-, 12- and 14-point; Fry's <em>Baskerville</em> is a favourite for large display. But there are no typefaces that excel in all three groups—hardly any, in two of them.
+            </p>
+            <p>Typographers accept the situation, and show their skill by calling for this or that type as the best design for the scale in which they are working. It is no hardship to them to leave unused the many available poor designs in any of the three groups. For the printer, and more especially the typefounder, on the other hand, it is wasteful to make and stock type-faces in unwanted sizes.</p>
+
+          </div>
+          <div class="is-col inspectable is-4 is-offset-1">
+            <div class="tiny">
+              <p class="sc">Point-size names</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th class="left">Name</th>
+                    <th class="right">Point size</th>
+                    <th class="right">Milimeters</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="size in sizes"
+                      :key="size.pt">
+                    <td>{{ size.name }}</td>
+                    <td class="right">{{ size.pt }}</td>
+                    <td class="right">{{ size.mm }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -85,7 +89,7 @@
 export default {
     data() {
         return {
-            withOpsz: true,
+            withOpsz: 1,
             sizes: [
                 {
                     pt: '4.5pt',
@@ -154,15 +158,22 @@ export default {
 @import "../scss/variables";
 @import "../scss/mixins";
 #opsz {
-  .smaller {
-    // font-size: rem-calc(14px);
+  .flex {
+    display: flex;
+    justify-content: space-between;
   }
+
+  .smaller {
+    font-size: rem-calc(16px);
+    margin-left: 15%;
+  }
+
   .sideNote {
     // position: absolute;
     right: 0;
   }
   .explanation {
-    color: $beige;
+    // color: white;
     @include mobile() {
       padding-bottom: 3em;
       border-bottom: 1px solid $beige4;
@@ -190,9 +201,7 @@ export default {
     }
   }
   .controls {
-    display: none;
-    background: $beige5;
-    border-radius: 0.5rem;
+    background: white;
     padding: 1rem;
   }
 
@@ -214,11 +223,14 @@ export default {
       }
       p {
         font-weight: 700;
-        margin-left: 0.2rem;
       }
     }
 
     .title {
+      border-bottom: 2px solid $beige4;
+      border-top: 2px solid $beige4;
+      padding: 1rem 0 0.8rem;
+      margin-bottom: 2rem;
       h3 {
         font-size: 2em;
         font-weight: 200;
@@ -229,9 +241,7 @@ export default {
         }
       }
       p {
-        padding: 1rem 0 2rem;
-        margin-bottom: 3em;
-        border-bottom: 1px solid $beige4;
+        margin-top: 1rem;
         // font-weight: 100;
         color: $dark2;
       }

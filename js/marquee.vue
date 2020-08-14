@@ -141,82 +141,13 @@ export default {
 @import "../scss/mixins";
 
 #marquee {
+  .overflowable {
+    margin-top: 8em;
+  }
   @include mobile() {
     font-size: calc(1vw * 3);
   }
 
-  .overflowable {
-    overflow: hidden;
-    position: absolute;
-    margin-top: 8em;
-    height: 14em;
-    width: 100vw;
-  }
-  .controlSlider {
-    position: absolute;
-    z-index: 1;
-    margin-top: 1.5em;
-    width: 12em;
-    font-variant-numeric: lining-nums tabular-nums;
-    background: rgba(#fff, 1);
-    right: -100em;
-    padding: 2em 102em 2em 2em;
-    //   * {
-    //     outline: solid #000 1px;
-    //   }
-    .sliderTitle {
-      position: absolute;
-      font-size: 0.7em;
-      top: -1.5em;
-      left: 0;
-      font-variant-caps: all-small-caps;
-      letter-spacing: 0.1em;
-      color: $beige2;
-    }
-    .flex {
-      display: flex;
-      font-size: 0.7em;
-      color: $beige3;
-      align-items: center;
-      input {
-        margin: 0.5em;
-        text-align: center;
-      }
-    }
-    .actual {
-      position: absolute;
-      color: $beige3;
-      font-size: 0.087em;
-      text-align: center;
-      margin-top: -2.5em;
-      margin-left: 1.7em;
-    }
-    p.extremes {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      margin: 0;
-      margin-right: 0.55em;
-      margin-top: -0.05em;
-      height: 0.8em;
-      font-size: 8em;
-      line-height: 0.5em;
-    }
-    .a {
-      color: $warmGray;
-      position: absolute;
-      text-align: center;
-      &.right {
-        left: 100%;
-      }
-      &.left {
-        left: 0%;
-      }
-    }
-    .mobile {
-      color: #000;
-    }
-  }
   .marquee {
     font-variant-numeric: oldstyle-nums tabular-nums;
     font-weight: 100;
