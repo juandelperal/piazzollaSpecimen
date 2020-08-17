@@ -140,19 +140,19 @@
       font-size: rem-calc(192px);
 
       .is-1 {
-        margin-right: -0.34em;
+        margin-right: -0.36em;
       }
       .is-3 {
-        margin-right: 0.34em;
+        margin-right: 0.36em;
       }
     }
     @include mobile() {
       font-size: calc(1vw * 23);
       .is-2 {
-        margin-right: 0.34em;
+        margin-right: 0.36em;
       }
       .is-3 {
-        margin-right: 0.34em * 2;
+        margin-right: 0.36em * 2;
       }
     }
   }
