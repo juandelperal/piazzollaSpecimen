@@ -61,7 +61,7 @@
           </p>
           <div class="is-col is-3 is-offset-1 inspectable">
             <p class="small is-small-col">
-              1. Piazzolla has more than 2300 characters and supports 210+ languages accross all continents that use the Latin, Greek and Cyrillic scripts.
+              1. Piazzolla has more than 2300 characters and supports 210+ languages across all continents that use the Latin, Greek and Cyrillic scripts.
             </p>
           </div>
           <div class="is-col is-7 relative is-offset-1 inspectable">
@@ -85,7 +85,7 @@
                 </span>
               </p>
               <p class="small">
-                The variable fonts technology brings more possibilities to users and allows them to more options with a smaller filesize.
+                The variable fonts technology offers more granular customization with reduced file sizes.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@
             </p>
             <p>
               <span class="roman">iv</span>
-              Piazzolla is a variable font with two axes –<em>Weight</em> and <em>Optical Size</em>– which allows for better control and precision in the typesetting<sup>2</sup>. With predefined and custom styles, Piazzolla will help you to build solid texts and sharp headlines.
+              Piazzolla is a variable font with two axes –<em>Weight</em> and <em>Optical Size</em>– which allows for better control and precision in the typesetting<sup>2</sup>. With predefined and custom styles, Piazzolla will help you build solid texts and sharp headlines.
             </p>
             <ul>
               <li v-for="(name, key) in features"
@@ -183,6 +183,7 @@
     &:hover {
       .value {
         // font-weight: 500;
+        // padding-left: 0.25em;
       }
     }
   }

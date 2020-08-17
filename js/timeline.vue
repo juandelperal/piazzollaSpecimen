@@ -197,6 +197,7 @@ export default {
     .text {
       h3 {
         font-size: 3em;
+        font-style: italic;
       }
     }
     .card {

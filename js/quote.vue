@@ -3,7 +3,7 @@
            data-scroll-section>
     <div class="margins relative">
       <p class="allSc inspectable">
-        In my country the presidents change and no one say a word; bishops, cardinals, football players, whatever, <em>but not tango</em>. Tango should remain always as it is.
+        In my country, presidents change and no one says a word; bishops, cardinals, football players –you name it. <em>But not tango</em>, tango must always remain the same.
       </p>
       <h3 class="inspectable">
         En mi país cambian los presidentes y no dicen nada, cambian los obispos, los cardenales, los jugadores de fútbol, cualquier cosa, <em>pero el tango, no.</em> El tango hay que dejarlo así.
