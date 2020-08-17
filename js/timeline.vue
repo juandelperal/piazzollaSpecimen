@@ -69,14 +69,14 @@ export default {
                 place: 'par',
                 title: 'Studies in Paris',
                 subhead: 'Rediscovering tango',
-                text: "Piazzolla won a contest and with that money he traveled to Europe to study classical music in Paris where he trained with Nadia Boulanger.<br> Piazzolla was tired of tango and tried to hide his tango past and his bandoneon compositions to Nadia Boulanger, thinking that his destiny lay in classical music. When presenting his work, Piazzolla performed some of his classical compositions, but it was not until he performed *Triunfal*, one of his tangos, that she congratulated and encouraged him to continue his career in tango. <br>He studied classical composition, including counterpoint, which would play an important role in his later tango compositions."
+                text: "Piazzolla won a contest and with that money he traveled to Europe to study classical music in Paris where he trained with Nadia Boulanger.<br> At that time he was tired of tango and tried to hide his tango past and his bandoneon compositions to his professor, thinking that his future lay in classical music. When presenting his work, Piazzolla performed some of his classical compositions, but it was not until he performed *Triunfal*, one of his tangos, that she congratulated and encouraged him to continue his career in tango. <br>He studied classical composition, including counterpoint, which would play an important role in his later tango compositions."
             },
             {
                 year: 1955,
                 place: 'bue',
                 title: 'Nuevo tango',
                 subhead: 'In the Tango’s vanguard',
-                text: "After his return to Argentina, Piazzolla formed the *Octeto de Buenos Aires.* His biographers indicate that he was willing to produce a national scandal and to break with the musical traditions of Tango that governed Argentina at that time. <br> In his new compositions Astor used all the knowledge he had acquired years before with the renowned *Alberto Ginastera* in Buenos Aires, and with *Nadia Boulanger* in France. <br> There were hard criticisms on the part of the more traditional *tangueros* who accused Piazzolla of being “the killer of tango”",
+                text: "After his return to Argentina, Piazzolla formed the *Octeto de Buenos Aires.* His biographers indicate that he was willing to produce a national scandal and to break with the musical traditions of Tango that governed Argentina at that time. <br> In his new compositions Astor used all the knowledge he had acquired years before with the renowned *Alberto Ginastera* in Argentina, and with *Nadia Boulanger* in France. <br> His work received hard criticisms on the part of the more traditional *tangueros,* who accused Piazzolla of being “the killer of tango”",
             },
 
              {
@@ -84,7 +84,7 @@ export default {
                 place: 'nyc',
                 title: 'Back to New York',
                 subhead: 'Tango and Jazz',
-                text: "In 1958 Piazzolla traveled to New York with his family. It was a very difficult period in his career since tango was not known in the United States. In that country, Piazzolla recorded two fusion albums that were a mix between tango and other styles: *An Evening in Buenos Aires* and *Take Me Dancing! The Latin Rhythms of Astor Piazzolla  & his Quintet.*<br> In 1959, during one of his tours, he received the news that his father had died in Argentina. He composed and dedicated his famous composition *Adios Nonino* to him.",
+                text: "In 1958 Piazzolla traveled to New York with his family. It was a very difficult period in his career since tango was not known in the United States. In that country, Piazzolla recorded two fusion albums mixing tango and latin-jazz elements: *An Evening in Buenos Aires* and *Take Me Dancing! The Latin Rhythms of Astor Piazzolla & his Quintet.*<br> In 1959, during one of his tours, he received the news that his father had died in Argentina. He composed and dedicated his famous composition *Adios Nonino* to him.",
             },
 
             {
@@ -100,7 +100,7 @@ export default {
                 place: 'par',
                 title: 'His last years',
                 subhead: 'Years in Paris',
-                text: "He was awarded for the soundtrack composed for the film *El Exilio de Gardel* directed by Pino Solanas. By then Piazzolla had moved to Paris. He himself said in an interview: <br>“Paris is my second homeland, because they understood what they did not understand about me here in Argentina.” There he spent his last years of life ",
+                text: "He was awarded for the soundtrack composed for the film *El Exilio de Gardel* directed by Pino Solanas. By then Piazzolla had moved to Paris. He said in an interview: <br>“Paris is my second homeland, because they understood what they did not understand about me here in Argentina.” There he spent his last years of life ",
             },
              {
                 year: 1992 ,
