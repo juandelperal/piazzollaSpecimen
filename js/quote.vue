@@ -3,11 +3,10 @@
            data-scroll-section>
     <div class="margins relative">
       <p class="allSc inspectable">
-        El tango hay que dejarlo así como es: antiguo, aburrido, igual, repetido.
-        Ástor Piazzolla, fragmentos de una entrevista televisiva.
+        In my country the presidents change and no one say a word; bishops, cardinals, football players, whatever, <em>but not tango</em>. Tango should remain always as it is.
       </p>
       <h3 class="inspectable">
-        En mi país cambian los presidentes y no dicen nada, cambian los obispos, los cardenales, los jugadores de fútbol, cualquier cosa, <em>pero el tango, no.</em>
+        En mi país cambian los presidentes y no dicen nada, cambian los obispos, los cardenales, los jugadores de fútbol, cualquier cosa, <em>pero el tango, no.</em> El tango hay que dejarlo así.
       </h3>
     </div>
   </section>
@@ -20,33 +19,34 @@
 
 h3 {
   font-weight: 200;
-  font-size: rem-calc(96px * 0.7);
-  line-height: rem-calc(96px * 0.85);
+  letter-spacing: -0.005em;
 }
 p {
   position: absolute;
-  top: rem-calc(96px * 0.7 * 0.7);
-  letter-spacing: 0.15em;
+  letter-spacing: 0.28em;
   color: $beige;
-  font-weight: 300;
-  width: 60%;
+  font-weight: 200;
 }
 @include desktop() {
   h3 {
-    font-size: rem-calc(96px);
-    line-height: rem-calc(96px * 1.12);
+    font-size: rem-calc(97px);
+    line-height: rem-calc(97px * 1.25);
   }
   p {
-    top: rem-calc(96px * 0.65);
-    line-height: rem-calc(96px * 1.12);
-    margin-left: 30%;
+    line-height: rem-calc(97px * 1.25);
+    margin: rem-calc(97px * 0.71) 20%;
+    font-size: rem-calc(28px);
   }
 }
 @include mobile() {
+  h3 {
+    font-size: rem-calc(97px * 0.75);
+    line-height: rem-calc(97px * 0.95);
+  }
   p {
-    line-height: rem-calc(96px * 0.85);
-    font-size: rem-calc(18px);
-    margin-left: 15vw;
+    line-height: rem-calc(97px * 0.95);
+    font-size: rem-calc(20px);
+    margin: rem-calc(97px * 0.55)  25% 0 15%;
   }
 }
 </style>
