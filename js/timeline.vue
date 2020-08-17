@@ -41,61 +41,79 @@ export default {
                 place: 'mdq',
                 title: 'Birth',
                 subhead: 'Piazzolla was born in Mar del Plata, Argentina',
-                text: 'He was the only child of Italian immigrant parents, Vicente "Nonino" Piazzolla and Assunta Manetti. His paternal grandfather, a sailor and fisherman named Pantaleo (later Pantaleón) Piazzolla, had immigrated to Mar del Plata from Trani, a seaport in the southeastern Italian region of Apulia, at the end of the 19th century. His mother was the daughter of two Italian immigrants from Lucca in the central region of Tuscany.',
+                text: "He was the only child of Vicente  “Nonino” Piazzolla and Asunta Manetti (both born in Mar del Plata, children of Italian parents that had immigrated to Mar del Plata at the end of the 19th century). Astor’s early years were difficult. He was born with clubfoot, a defect in his right leg. From the age of two, he had several surgeries at the Sanatorio Marítimo.",
             },
             {
-                year: 1925,
+                year: 1924,
                 place: 'nyc',
                 title: 'Relocation to New York',
-                subhead: 'Astor Piazzolla moved with his family to Greenwich Village',
-                text: "In those days it was a violent neighbourhood inhabited by a volatile mixture of gangsters and hard-working immigrants. His parents worked long hours and Piazzolla soon learned to take care of himself on the streets despite having a limp.",
-            },
-            {
-                year: 1929,
-                place: 'nyc',
-                title: 'First bandoneon',
-                subhead: 'Early approach to music',
-                text: "At home he would listen to his father's records of the tango orchestras of Carlos Gardel and Julio de Caro, and was exposed to jazz and classical music, including Bach, from an early age. He began to play the bandoneon after his father spotted one in a New York pawn shop in 1929.",
+                subhead: 'Astor Piazzolla moved with his family to New York',
+                text: "The Piazzolla family first settled in *Port Reading*, New Jersey, in the home of a relative. Later, they settled in an apartment in Manhattan. Astor adapted very quickly to life in New York, acquiring that naturalness to speak English with a New York accent that would accompany him throughout his life. When Astor was seven or eight years old, his father gave him a bandoneon. \n At home he would listen to his father’s records of the tango orchestras of Carlos Gardel and Julio de Caro, and was exposed to jazz and classical music, including Bach, from an early age."
             },
             {
                 year: 1934,
                 place: 'nyc',
                 title: 'Gardel',
                 subhead: 'When Piazzolla met Carlos Gardel',
-                text: "In 1934 he met Carlos Gardel, one of the most important figures in the history of tango, and played a cameo role as a paper boy in his movie El día que me quieras. Gardel invited the young bandoneon player to join him on his tour. Despite the Piazzolla's enthusiasm, his father decided that he was not old enough to go along.",
+                text: "In 1934 he met Carlos Gardel, one of the most important figures in the history of tango, and played a cameo role as a paper boy in his movie *El día que me quieras.* Gardel invited the young bandoneon player to join him on his tour. Despite the Piazzolla’s enthusiasm, his father decided that he was not old enough to go along.",
             },
             {
-                year: 1936,
-                place: 'mdq',
+                year: 1937,
+                place: 'bue',
                 title: 'Back to Argentina',
                 subhead: 'First orchestras',
-                text: "He began to play in a variety of tango orchestras and around this time he discovered the music of Elvino Vardaro’s sextet on the radio. Vardaro's novel interpretation of tango made a great impression on Piazzolla and years later he would become Piazzolla's violinist in his *Orquesta de Cuerdas* (String Orchestra) and his First Quintet.",
-            },
-            {
-                year: 1938,
-                place: 'bue',
-                title: 'Troilo',
-                subhead: 'Troilo, Ginastera and ',
-                text: "Still 17 years old, Piazzolla joined the orchestra of the bandoneonist Aníbal Troilo, which would become one of the greatest tango orchestras of that time. Piazzolla also became Troilo's arranger and would occasionally play the piano for him. By 1941 he was earning a good wage, enough to pay for music lessons with *Alberto Ginastera,* an eminent Argentine composer of classical music.",
+                text: "After his return to Argentina he stayed in a pension in Buenos Aires. Between 1939 and 1944 he was a member of Anibal Troilo’s orchestra as bandoneonist and arranger. Later  he participated in the Fiorentino Orchestra. During those years he married Odette María Wolff and they had two children.",
             },
             {
                 year: 1954,
                 place: 'par',
                 title: 'Studies in Paris',
-                subhead: 'Studies with Nadia Boulanger',
-                text: "Piazzolla was tired of tango and tried to hide his tanguero past and his bandoneon compositions from *Nadia Boulanger,* thinking that his destiny lay in classical music. Introducing his work, Piazzolla played her a number of his classically inspired compositions, but it was not until he played his tango *Triunfal* that she congratulated him and encouraged him to pursue his career in tango. <br> He studied classical composition, including counterpoint, which was to play an important role in his later tango compositions. ",
+                subhead: 'Rediscovering tango',
+                text: "He won a contest and with that money he traveled to Europe to study classical music in Paris. <br> There he trained with Nadia Boulanger. Piazzolla was tired of tango and tried to hide his tango past and his bandoneon compositions from Nadia Boulanger, thinking that his destiny lay in classical music. When presenting his work, Piazzolla performed some of his classically inspired compositions, but it was not until he performed *Triunfal*, one of his tangos that she congratulated him and encouraged him to continue his career in tango. <br>He studied classical composition, including counterpoint, which will play an important role in his later tango compositions."
             },
             {
                 year: 1955,
                 place: 'bue',
                 title: 'Nuevo tango',
-                subhead: 'In the Tango\'s vanguard',
-                text: "Piazzolla was tired of tango and tried to hide his tanguero past and his bandoneon compositions from *Nadia Boulanger,* thinking that his destiny lay in classical music. Introducing his work, Piazzolla played her a number of his classically inspired compositions, but it was not until he played his tango *Triunfal* that she congratulated him and encouraged him to pursue his career in tango. <br> He studied classical composition, including counterpoint, which was to play an important role in his later tango compositions. ",
+                subhead: 'In the Tango’s vanguard',
+                text: "After his return to Argentina, Piazzolla formed the *Octeto de Buenos Aires.* His biographers indicate that he was willing to produce a national scandal and to break with all the musical traditions that governed Argentina at that time. <br> In his new compositions Astror used all the knowledge he had acquired years before with the renowned *Alberto Ginastera* in Buenos Aires, and the new ones with *Nadia Boulanger.* <br> There were certain criticisms on the part of the more traditional *tangueros* who accused Piazzolla of being “the killer of tango”",
             },
+
+             {
+                year: 1958 ,
+                place: 'nyc',
+                title: 'Back to New York',
+                subhead: 'Tango and Jazz',
+                text: "In 1958 he traveled to New York with his family. It was a very difficult period in his career since tango was not known in the United States. In that country, Piazzolla recorded two albums that were a mix between tango and jazz: *An Evening in Buenos Aires* and *Take Me Dancing! The Latin Rhythms of Astor Piazzolla  & his Quintet.*<br> In 1959 he received the news that his father had died in Argentina. He composed and dedicated his famous work *Adios Nonino* to him.",
+            },
+
+            {
+                year: 1960 ,
+                place: 'nyc',
+                title: 'Years in Argentina',
+                subhead: 'His musical consecration',
+                text: "After his return from New York, Piazzolla began a new period in his musical career. During the 1960s and 1970s he formed various musical groups and composed numerous works that achieved worldwide fame. Around those years he recorded an album, together with *Edmundo Correa,* with lyrics by the famous writer *José Luis Borges.* He also worked with famous musicians, including *Amelita Baltar, Horacio Ferrer,* and *Héctor de Rosas.*",
+            },
+
+              {
+                year: 1986 ,
+                place: 'par',
+                title: 'His last years',
+                subhead: 'Years in Paris',
+                text: "He was awarded for the soundtrack composed for the film *El Exilio de Gardel* directed by Pino Solanas. By then Piazzolla had moved to Paris. He himself said in an interview: <br>“Paris is my second homeland, because they understood what they did not understand me here in Argentina.” There he spent his last years of life ",
+            },
+             {
+                year: 1992 ,
+                place: 'bue',
+                title: 'Death',
+                subhead: 'The end of his life and his legacy',
+                text: "In August 1990 Piazzolla suffered a cerebral thrombosis when he fell into the bathroom of a Parisian apartment hotel. He was admitted with a cerebral infarction from which he did not recover. Days later he was transferred to Buenos Aires, where he finally died two years later on July 4, 1992, at the age of 71. Throughout his career, Piazzolla became a world-renowned musician. One of his biographers stated: <br> “In Argentina, gradually, his new tango has gained acceptance, and his music has influenced a new generation of tango composers. For much of his life his music was not considered tango; today, the genre would not be complete without Piazzolla.”",
+            },
+
             // https://en.wikipedia.org/wiki/Astor_Piazzolla#Biography
 
 
-            // Piazzolla's Orquesta Típica|Orquesta Típica (in English: Piazzolla's Traditional Orchestra), a.k.a. the 1946 Orchestra, 1946–50.
+            // Piazzolla’s Orquesta Típica|Orquesta Típica (in English: Piazzolla’s Traditional Orchestra), a.k.a. the 1946 Orchestra, 1946–50.
             // Orquesta de Cuerdas (in English: String Orchestra), 1955–58.
             // Octeto Buenos Aires (in English: Buenos Aires Octet) 1955–58.
             // Jazz Tango Quintet, 1959.
