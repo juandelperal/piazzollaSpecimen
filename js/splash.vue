@@ -46,7 +46,7 @@
 
         <div class="is-col is-11 is-offset-1">
           <h3 class="inspectable">
-            Intended for optimizing the available space in press media and other publications, Piazzolla has a compact appearance which allows for small font sizes and tight leading while achieving <em>solid lines</em> and <em>robust paragraphs</em>.
+            Intended for optimizing the available space in press media and other publications, <em>Piazzolla</em> has a compact appearance which allows for small font sizes and tight leading while achieving <em>solid lines</em> and <em>robust paragraphs</em>.
           </h3>
         </div>
       </div>
@@ -67,7 +67,7 @@
           <div class="is-col is-7 relative is-offset-1 inspectable">
             <p>
               <span class="roman">ii</span>
-              It's a versatile family providing users with plenty of features and moods. It spans a wide range of weights and an extensive character set for extended latin, polytonic greek and expert cyrillic<sup>1</sup>. Piazzolla is a variable font with two axes, which allows for better control and precision in typesetting<sup>2</sup>.
+              It's a versatile family providing users with plenty of features and moods. It spans a wide range of weights and an extensive character set for extended latin, polytonic greek and expert cyrillic<sup>1</sup>.
             </p>
           </div>
         </div>
@@ -85,7 +85,7 @@
                 </span>
               </p>
               <p class="small">
-                The variable fonts technology brings more possibilities to users and allows them to control the type more acurately.
+                The variable fonts technology brings more possibilities to users and allows them to more options with a smaller filesize.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@
             </p>
             <p>
               <span class="roman">iv</span>
-              The family has <em>Weight</em> and <em>Optical Size</em> axes. With predefined styles and custom locations, Piazzolla will help you to build solid text and sharp headlines.
+              Piazzolla is a variable font with two axes –<em>Weight</em> and <em>Optical Size</em>– which allows for better control and precision in the typesetting<sup>2</sup>. With predefined and custom styles, Piazzolla will help you to build solid texts and sharp headlines.
             </p>
             <ul>
               <li v-for="(name, key) in features"

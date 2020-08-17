@@ -34,7 +34,7 @@
           <template v-slot:back>
             <p>
               <code>ss02</code>
-              Stylistic Set 2 (Dynamic arrows and triangles)
+              -> with Stylistic Set 2 (Dynamic arrows and triangles)
             </p>
           </template>
         </card>
@@ -47,7 +47,7 @@
           <template v-slot:back>
             <p>
               <code>liga</code>
-              Dynamic ligatures
+              Dynamic standard ligatures
             </p>
           </template>
         </card>
@@ -152,7 +152,7 @@
           <template v-slot:back>
             <p>
               <code>sups</code>
-              Superscript
+              Superscript numbers and letters
             </p>
           </template>
         </card>
@@ -164,7 +164,7 @@
           </p>
           <template v-slot:back>
             <p>
-              Greek (+polytonic) support
+              Greek <em>(+polytonic)</em> support
             </p>
           </template>
         </card>
@@ -210,7 +210,9 @@
             <span style="font-feature-settings: 'pnum' 1, 'onum' 1;">36</span>
           </p>
           <template v-slot:back>
-            <p>Lining and oldstyle numbers, both in proportional and tabular versions</p>
+            <p>
+              <em>Lining</em> and <em>oldstyle</em> numbers, both in <em>proportional</em> and <em>tabular</em> versions
+            </p>
           </template>
         </card>
 
@@ -220,7 +222,7 @@
           <template v-slot:back>
             <p>
               <code>U+1E9E</code>
-              Capital sharp S or <em>Eszett</em>
+              Capital sharp S or german <em>Eszett</em>
             </p>
           </template>
         </card>
@@ -246,7 +248,7 @@
           <template v-slot:back>
             <p>
               <code>case</code>
-              Case-Sensitive Forms
+              Case-Sensitive variations
             </p>
           </template>
         </card>
@@ -276,7 +278,7 @@
           <template v-slot:back>
             <p>
               Supports the polytonic Greek orthography
-              <em>Πολυτονικό σύστημα γραφής</em>
+              <em class="hidden-mobile">Πολυτονικό σύστημα γραφής</em>
             </p>
           </template>
         </card>

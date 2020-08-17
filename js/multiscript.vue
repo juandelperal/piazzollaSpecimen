@@ -1,7 +1,7 @@
 <template>
   <section id="multiscript">
     <div class="margins">
-      <h3>Multiscript</h3>
+      <h3>A multiscript family</h3>
       <div class="is-row">
         <!-- Scr -->
         <div class="is-col">

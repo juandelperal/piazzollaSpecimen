@@ -39,7 +39,7 @@
               <div class="explanation">
                 <p class="fig sc small">Variable fonts</p>
                 <p class="small">
-                  Piazzolla allows you to improve the quelity of text legibility in small sizes. This works automatically in modern browsers.
+                  Piazzolla allows you to improve the quality of text legibility in small sizes. This works automatically in all modern browsers.
                 </p>
               </div>
             </div>
