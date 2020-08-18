@@ -5,7 +5,7 @@
     <div class="margins">
 
       <div class="sample">
-        <div class="is-row">
+        <div class="is-row flipped">
 
           <div class="is-col is-7 inspectable"
                :class="{roto: !withOpsz}">
@@ -36,12 +36,9 @@
                        class="switch"
                        v-model="withOpsz">
               </div>
-              <div class="explanation">
-                <p class="fig sc small">Variable fonts</p>
-                <p class="small">
-                  Piazzolla improves the text legibility at small sizes. This feature works automatically in all modern browsers.
-                </p>
-              </div>
+              <p class="explanation small">
+                <em>Piazzolla</em> improves the text legibility at small sizes. This feature works automatically in all modern browsers.
+              </p>
             </div>
           </div>
         </div>
@@ -158,9 +155,34 @@ export default {
 @import "../scss/variables";
 @import "../scss/mixins";
 #opsz {
-  .flex {
-    display: flex;
-    justify-content: space-between;
+  * {
+    // outline: solid 1px $beige;
+  }
+  .flipped {
+    @include mobile() {
+      flex-direction: column-reverse;
+    }
+  }
+  .controls {
+    background: white;
+    padding: 0.5rem 1rem;
+    @include mobile() {
+      margin-bottom: 3rem;
+    }
+    p.explanation {
+      margin-bottom: 0;
+      padding: 1rem 0;
+    }
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      border-bottom: 1px solid $beige4;
+      h4 {
+        margin: 0;
+      }
+    }
   }
 
   .smaller {
@@ -174,25 +196,7 @@ export default {
     // position: absolute;
     right: 0;
   }
-  .explanation {
-    // color: white;
-    @include mobile() {
-      padding-bottom: 3em;
-      border-bottom: 1px solid $beige4;
-    }
-  }
-  label {
-    display: flex;
-    // display: none;
-    align-content: center;
-    input {
-      margin: 0.1rem 0.5rem;
-    }
-    color: $beige;
-    font-style: italic;
-    // font-weight: 200;
-    margin: 0.5rem 0;
-  }
+
   .roto {
     font-optical-sizing: none;
     .text {
@@ -201,10 +205,6 @@ export default {
     h3 {
       font-variation-settings: "opsz" 10;
     }
-  }
-  .controls {
-    background: white;
-    padding: 1rem;
   }
 
   .sample {
@@ -231,9 +231,10 @@ export default {
     .title {
       border-bottom: 2px solid $beige4;
       border-top: 2px solid $beige4;
-      padding: 1rem 0 0.8rem;
+      padding: 1.5rem 0 0.8rem;
       margin-bottom: 2rem;
       h3 {
+        line-height: 1.2;
         font-size: 2em;
         font-weight: 200;
         margin: 0;

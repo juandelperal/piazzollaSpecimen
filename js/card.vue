@@ -84,8 +84,6 @@
 export default {
     methods: {
         flip(event) {
-            console.log(this.$slots)
-            console.log(this.$scopedSlots)
             let e = event.target.closest(".flippingCard")
 
             if (!e.classList.contains('isFlipped')) {

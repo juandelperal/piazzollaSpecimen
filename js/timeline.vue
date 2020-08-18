@@ -185,7 +185,7 @@
             font-feature-settings: "tnum"1, "onum"1;
             font-weight: 100;
             text-align: center;
-            font-size: 4rem;
+            font-size: 4.2rem;
             color: rgba($beige, 0.5);
             line-height: 1;
             margin-top: -0.37em;
