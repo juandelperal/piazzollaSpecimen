@@ -60,7 +60,7 @@ export default {
           title: "Gardel",
           subhead: "When Piazzolla met Carlos Gardel",
           text:
-            "In 1934, he met Carlos Gardel, one of the most important figures in the history of Tango, and played a cameo role as a paper boy in his movie *El día que me quieras.* Gardel invited the young bandoneon player to join him on his tour. Despite Piazzolla’s enthusiasm, his father decided that he was not old enough to go along.",
+            "In 1934, he met Carlos Gardel, one of the most important figures in the history of tango, and played a cameo role as a paper boy in his movie *El día que me quieras.* Gardel invited the young bandoneon player to join him on his tour. Despite Piazzolla’s enthusiasm, his father decided that he was not old enough to go along.",
         },
         {
           year: 1937,
@@ -81,8 +81,8 @@ export default {
         {
           year: 1955,
           place: "bue",
-          title: "Killer of Tango",
-          subhead: "In the Tango’s vanguard",
+          title: "Killer of tango",
+          subhead: "In the tango’s vanguard",
           text:
             "His biographers indicate that, after his return to Argentina, he was willing to produce a national scandal and to break with the musical traditions of tango at that time. In his new compositions, Piazzolla used all the knowledge he had acquired years before with Ginastera and Boulanger. His work was received with harsh criticism from the more traditional *tangueros,* who accused Piazzolla of being the *killer of tango*",
         },
