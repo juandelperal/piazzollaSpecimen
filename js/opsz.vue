@@ -163,6 +163,9 @@ export default {
       flex-direction: column-reverse;
     }
   }
+  // overflow: hidden;
+  // position: absolute;
+
   .controls {
     background: white;
     padding: 0.5rem 1rem;
