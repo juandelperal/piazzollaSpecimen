@@ -168,7 +168,7 @@ export default {
 
   .controls {
     background: white;
-    padding: 0.5rem 1rem;
+    padding: 0rem 1rem 1rem;
     @include mobile() {
       margin-bottom: 3rem;
     }
