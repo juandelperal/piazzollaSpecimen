@@ -49,10 +49,10 @@ export default {
         {
           year: 1924,
           place: "nyc",
-          title: "Relocation",
+          title: "Move to the US",
           subhead: "Astor Piazzolla moved with his family to New York",
           text:
-            "The Piazzolla family first settled in *Port Reading*, New Jersey. Later, they settled in an apartment in Manhattan. Astor adapted very quickly to the New York life style, acquiring the fluency for speaking English with a New York accent. When he was seven or eight years old, his father gave him a bandoneon. \n At home he would listen to his father’s records of the tango orchestras of Carlos Gardel and Julio de Caro, and was exposed to jazz and classical music.",
+            "The Piazzolla family first settled in Port Reading, New Jersey. Later, they settled in an apartment in Manhattan. Astor adapted very quickly to the New York life style. When he was seven or eight years old, his father gave him a bandoneon. At home he would listen to his father’s records of the tango orchestras of Carlos Gardel and Julio de Caro, and was exposed to jazz and classical music.",
         },
         {
           year: 1934,
@@ -68,7 +68,7 @@ export default {
           title: "Argentina",
           subhead: "First orchestras",
           text:
-            "After his return to Argentina he stayed in a pension in Buenos Aires. Between 1939 and 1944 he was a member of Anibal Troilo’s orchestra both as bandoneonist and arranger. Later he participated in the Fiorentino Orchestra. During those years he married Odette María Wolff and they had two children.",
+            "After his return to Argentina he stayed in a pension in Buenos Aires. Between 1939 and 1944 he was a member of Anibal Troilo’s orchestra both as bandoneonist and arranger. Later, he participated in the Fiorentino Orchestra. During those years he married Odette María Wolff and they had two children.",
         },
         {
           year: 1954,
@@ -76,15 +76,15 @@ export default {
           title: "Nadia Boulanger",
           subhead: "Rediscovering tango in Paris",
           text:
-            "Piazzolla won a contest and with that money he traveled to Europe to study classical music in Paris with Nadia Boulanger. He thought his future lay in classical music. When presenting his work to her, Piazzolla performed some of his classical compositions, but it was not until he performed *Triunfal*, one of his tangos. that she congratulated him and encouraged him to continue his career in tango. He studied classical composition, including counterpoint, which would play a central role in his later tango compositions.",
+            "Piazzolla won a contest and with that money traveled to Europe to study classical music in Paris with Nadia Boulanger. He thought his future lay in classical music. When presenting his work to her, Piazzolla performed some of his classically inspired compositions, but it was not until he performed one of his tangos that she congratulated him and encouraged him to continue his career in that genre. He studied classical composition, including counterpoint, which would play a central role in his later tango works.",
         },
         {
           year: 1955,
           place: "bue",
-          title: "Nuevo tango",
+          title: "Killer of Tango",
           subhead: "In the Tango’s vanguard",
           text:
-            "His biographers indicate that after his return to Argentina he was willing to produce a national scandal and to break with the musical traditions of Tango of Argentina at that time. In his new compositions Astor used all the knowledge he had acquired years before with Ginastera and with Boulanger. <br> His work received hard criticisms on the part of the more traditional *tangueros,* who accused Piazzolla of being “the killer of tango”",
+            "His biographers indicate that after his return to Argentina he was willing to produce a national scandal and to break with the musical traditions of Tango at that time. In his new compositions, Piazzolla used all the knowledge he had acquired years before with Ginastera and Boulanger. His work received hard criticisms on the part of the more traditional *tangueros,* who accused Piazzolla of being the *killer of tango*",
         },
 
         {
@@ -93,16 +93,16 @@ export default {
           title: "Back in the US",
           subhead: "Tango and Jazz",
           text:
-            "In 1958 Piazzolla traveled to New York with his family. It was a very difficult period in his career since tango was not known in the United States. In that country, Piazzolla recorded two fusion albums mixing tango and latin-jazz elements. In 1959, during one of his tours, he received the news that his father had died in Argentina. He composed and dedicated his famous composition *Adios Nonino* to him.",
+            "In 1958 Piazzolla traveled to New York with his family. It was a very difficult period in his career since tango was not known in the United States. In that country, Piazzolla recorded two albums mixing tango and latin-jazz elements. In 1959, during one of his tours, he received the news that his father had died in Argentina. He composed and dedicated his famous composition *Adios Nonino* to him.",
         },
 
         {
           year: 1960,
-          place: "nyc",
-          title: "Years in Argentina",
-          subhead: "His musical consecration",
+          place: "arg",
+          title: "His consecration",
+          subhead: "Back in Argentina",
           text:
-            "After his return from New York, Piazzolla began a new period in his musical career. During the 60s and 70s he formed various musical groups and composed numerous works that achieved worldwide fame. Around those years he recorded an album together with *Edmundo Correa,* with lyrics by the famous writer *José Luis Borges.* He also worked with famous tango musicians including *Amelita Baltar, Horacio Ferrer,* and *Héctor de Rosas.*",
+            "After his return from New York, Piazzolla began a new period in his musical career. During the 60s and 70s he formed several musical groups and composed numerous works that achieved worldwide fame. Around those years he recorded an album with *Edmundo Correa,* with lyrics by the famous writer *José Luis Borges.* He also worked with famous tango musicians including *Amelita Baltar, Horacio Ferrer,* and *Héctor de Rosas.*",
         },
 
         {
@@ -111,7 +111,7 @@ export default {
           title: "Last years",
           subhead: "Years in Paris",
           text:
-            "He was awarded for the soundtrack composed for the film *El Exilio de Gardel* directed by Pino Solanas. By then Piazzolla had moved to Paris. He said in an interview: “Paris is my second homeland, because they understood what they did not understand about me here in Argentina.” There he spent his last years of life ",
+            "He was awarded for the soundtrack composed for the film *El Exilio de Gardel* directed by Pino Solanas. By then Piazzolla had moved to Paris, where he spent his last years of life. As he said in an interview: *—Paris is my second homeland, because they understood what they did not understand about me here in Argentina.*",
         },
         {
           year: 1992,
@@ -119,7 +119,7 @@ export default {
           title: "Death",
           subhead: "Astor Piazzolla’s legacy",
           text:
-            "In 1990 Piazzolla suffered a cerebral infarction when he fell into the bathroom of a Parisian apartment hotel. Days later he was transferred to Buenos Aires, where he finally died on July 4, 1992, at the age of 71. One of his biographers stated: <br> “In Argentina, gradually, his new tango has gained acceptance, and his music has influenced a new generation of tango composers. For much of his life his music was not considered tango; today, the genre would not be complete without Piazzolla.”",
+            "In 1990 Piazzolla suffered a cerebral infarction when he fell into the bathroom of a  apartment hotel in Paris. Days later, he was transferred to Buenos Aires, where he finally died on July 4, 1992, at the age of 71. One of his biographers stated: *“In Argentina, gradually, his new tango has gained acceptance, and his music has influenced a new generation of tango composers. For much of his life his music was not considered tango; today, the genre would not be complete without Piazzolla.”*",
         },
       ],
     };
