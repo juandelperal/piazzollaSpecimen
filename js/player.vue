@@ -47,6 +47,7 @@ p {
   a {
     display: flex;
 
+    // &:first-child,
     &:hover {
       color: $dark;
       .title {
@@ -67,6 +68,10 @@ p {
       position: absolute;
       color: $green;
       opacity: 0;
+      font-size: 1.5em;
+      margin-top: 0.45em;
+      margin-left: -0.1em;
+      line-height: 0;
     }
     .number {
       font-feature-settings: "numr" 1;
