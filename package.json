@@ -33,6 +33,7 @@
     },
     "dependencies": {
         "vue": "^2.6.11",
+        "vue-in-viewport-directive": "^2.0.1",
         "vue-showdown": "^2.4.1"
     }
 }
