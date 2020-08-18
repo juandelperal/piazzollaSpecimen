@@ -44,7 +44,7 @@ export default {
           title: "Birth",
           subhead: "Piazzolla was born in Mar del Plata, Argentina",
           text:
-            "He was the only child of Vicente “Nonino” Piazzolla and Asunta Manetti (both children of Italian parents that had immigrated to Mar del Plata at the end of the 19th century). Astor’s early years were difficult. He was born with clubfoot, a defect in his right leg. From the age of two, he had several surgeries.",
+            "He was the only child of Vicente “Nonino” Piazzolla and Asunta Manetti, both children of Italian parents that had immigrated to Mar del Plata at the end of the 19th century. Astor’s early years were difficult. He was born with clubfoot, a defect in his right leg. From the age of two, he had several surgeries.",
         },
         {
           year: 1924,
@@ -52,7 +52,7 @@ export default {
           title: "Move to the US",
           subhead: "Astor Piazzolla moved with his family to New York",
           text:
-            "The Piazzolla family first settled in Port Reading, New Jersey. Later, they settled in an apartment in Manhattan. Astor adapted very quickly to the New York life style. When he was seven or eight years old, his father gave him a bandoneon. At home he would listen to his father’s records of the tango orchestras of Carlos Gardel and Julio de Caro, and was exposed to jazz and classical music.",
+            "The Piazzolla family first settled in Port Reading, New Jersey. Later, they moved to an apartment in Manhattan. Astor adjusted very quickly to the New York life style. When he was seven or eight years old, his father gave him a bandoneon. At home, he would listen to his father’s recordings of the tango orchestras of Carlos Gardel and Julio de Caro, and was exposed to jazz and classical music.",
         },
         {
           year: 1934,
@@ -60,7 +60,7 @@ export default {
           title: "Gardel",
           subhead: "When Piazzolla met Carlos Gardel",
           text:
-            "In 1934 he met Carlos Gardel, one of the most important figures in the history of Tango, and played a cameo role as a paper boy in his movie *El día que me quieras.* Gardel invited the young bandoneon player to join him on his tour. Despite the Piazzolla’s enthusiasm, his father decided that he was not old enough to go along.",
+            "In 1934, he met Carlos Gardel, one of the most important figures in the history of Tango, and played a cameo role as a paper boy in his movie *El día que me quieras.* Gardel invited the young bandoneon player to join him on his tour. Despite Piazzolla’s enthusiasm, his father decided that he was not old enough to go along.",
         },
         {
           year: 1937,
@@ -68,7 +68,7 @@ export default {
           title: "Argentina",
           subhead: "First orchestras",
           text:
-            "After his return to Argentina he stayed in a pension in Buenos Aires. Between 1939 and 1944 he was a member of Anibal Troilo’s orchestra both as bandoneonist and arranger. Later, he participated in the Fiorentino Orchestra. During those years he married Odette María Wolff and they had two children.",
+            "After his return to Argentina, he stayed in Buenos Aires. Between 1939 and 1944, he was a member of Anibal Troilo’s orchestra both as bandoneonist and arranger. Later, he participated in the Fiorentino Orchestra. During those years, he married Odette María Wolff and they had two children.",
         },
         {
           year: 1954,
@@ -84,7 +84,7 @@ export default {
           title: "Killer of Tango",
           subhead: "In the Tango’s vanguard",
           text:
-            "His biographers indicate that after his return to Argentina he was willing to produce a national scandal and to break with the musical traditions of Tango at that time. In his new compositions, Piazzolla used all the knowledge he had acquired years before with Ginastera and Boulanger. His work received hard criticisms on the part of the more traditional *tangueros,* who accused Piazzolla of being the *killer of tango*",
+            "His biographers indicate that, after his return to Argentina, he was willing to produce a national scandal and to break with the musical traditions of tango at that time. In his new compositions, Piazzolla used all the knowledge he had acquired years before with Ginastera and Boulanger. His work was received with harsh criticism from the more traditional *tangueros,* who accused Piazzolla of being the *killer of tango*",
         },
 
         {
@@ -102,7 +102,7 @@ export default {
           title: "His consecration",
           subhead: "Back in Argentina",
           text:
-            "After his return from New York, Piazzolla began a new period in his musical career. During the 60s and 70s he formed several musical groups and composed numerous works that achieved worldwide fame. Around those years he recorded an album with *Edmundo Correa,* with lyrics by the famous writer *José Luis Borges.* He also worked with famous tango musicians including *Amelita Baltar, Horacio Ferrer,* and *Héctor de Rosas.*",
+            "After his return from New York, Piazzolla began a new period in his musical career. During the 60s and 70s, he formed several musical groups and composed numerous works that achieved worldwide fame. Around those years he recorded an album with *Edmundo Correa,* with lyrics by the famous writer *José Luis Borges.* He also worked with famous tango musicians including *Amelita Baltar, Horacio Ferrer,* and *Héctor de Rosas.*",
         },
 
         {
@@ -111,7 +111,7 @@ export default {
           title: "Last years",
           subhead: "Years in Paris",
           text:
-            "He was awarded for the soundtrack composed for the film *El Exilio de Gardel* directed by Pino Solanas. By then Piazzolla had moved to Paris, where he spent his last years of life. As he said in an interview: *—Paris is my second homeland, because they understood what they did not understand about me here in Argentina.*",
+            "He was awarded for the soundtrack composed for the film *El Exilio de Gardel* directed by Pino Solanas. By then, Piazzolla had moved to Paris, where he spent his last years of life. As he said in an interview: *—Paris is my second homeland, because they understood what they did not understand about me here in Argentina.*",
         },
         {
           year: 1992,
@@ -119,7 +119,7 @@ export default {
           title: "Death",
           subhead: "Astor Piazzolla’s legacy",
           text:
-            "In 1990 Piazzolla suffered a cerebral infarction when he fell into the bathroom of a  apartment hotel in Paris. Days later, he was transferred to Buenos Aires, where he finally died on July 4, 1992, at the age of 71. One of his biographers stated: *“In Argentina, gradually, his new tango has gained acceptance, and his music has influenced a new generation of tango composers. For much of his life his music was not considered tango; today, the genre would not be complete without Piazzolla.”*",
+            "In 1990 Piazzolla, suffered a cerebral bleed when he fell in the bathroom of a hotel in Paris. Days later, he was transferred to Buenos Aires, where he finally died on July 4, 1992, at the age of 71. One of his biographers stated: *“In Argentina, gradually, his new tango has gained acceptance, and his music has influenced a new generation of tango composers. For much of his life, his music was not considered tango; today, the genre would not be complete without Piazzolla.”*",
         },
       ],
     };
