@@ -6,7 +6,7 @@
           ref="cursor"></span>
     <div id="inspectorDetails"
          ref="inspector">
-      <h3><span class="sc">css</span> style</h3>
+      <h4><span class="sc">css</span> style</h4>
       <p v-for="(val, k) in store.inspector"
          :key="k">
         <span>{{k}}:</span>
@@ -32,7 +32,7 @@
     padding: 1rem 1.5rem 1.5rem 1.5rem;
     background: #fff;
     position: absolute;
-    font-size: 0.7em;
+    font-size: 0.7rem;
     line-height: 1.2;
     max-width: 250px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
@@ -52,5 +52,9 @@ p {
     color: $beige;
     margin-right: 0.4em;
   }
+}
+h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 </style>

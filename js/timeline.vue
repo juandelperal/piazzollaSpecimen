@@ -84,7 +84,7 @@ export default {
           title: "Killer of tango",
           subhead: "In the tango’s vanguard",
           text:
-            "His biographers indicate that, after his return to Argentina, he was willing to produce a national scandal and to break with the musical traditions of tango at that time. In his new compositions, Piazzolla used all the knowledge he had acquired years before with Ginastera and Boulanger. His work was received with harsh criticism from the more traditional *tangueros,* who accused Piazzolla of being the *killer of tango*",
+            "His biographers indicate that, after his return to Argentina, he was willing to produce a national scandal and to break with the musical traditions of tango at that time. In his new compositions, Piazzolla used all the knowledge he had acquired years before with Ginastera and Boulanger. His work was received with harsh criticism from the more traditional *tangueros,* who accused Piazzolla of being the *killer of tango*.",
         },
 
         {

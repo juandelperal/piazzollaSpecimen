@@ -1,49 +1,52 @@
 <template>
-  <section id="marquee"
-           data-scroll-section>
+  <section
+    data-scroll-section
+    id="marquee"
+  >
     <div class="overflowable">
       <div class="margins relative">
         <div class="controlSlider">
-          <p class="sliderTitle">
-            Variable weight
-          </p>
+          <h4 class="sliderTitle">Variable weight</h4>
           <p class="extremes">
-            <span class="a left w100">
-              a
-            </span>
-            <span class="a right w900">
-              a
-            </span>
-            <span class="a mobile"
-                  ref="mobile">
-              a
-            </span>
-            <span class="actual"
-                  ref="actual">{{ weight }}</span>
+            <span class="a left w100">a</span>
+            <span class="a right w900">a</span>
+            <span
+              class="a mobile"
+              ref="mobile"
+            >a</span>
           </p>
 
           <div class="flex">
             <label>100</label>
-            <input type="range"
-                   min="100"
-                   max="900"
-                   v-model="weight" />
+            <input
+              max="900"
+              min="100"
+              type="range"
+              v-model="weight"
+            />
             <label>900</label>
           </div>
-
+          <p
+            class="actual"
+            ref="actual"
+          >{{ weight }}</p>
         </div>
       </div>
     </div>
 
-    <div class="marquee"
-         v-for="line in lines">
+    <div
+      class="marquee"
+      v-for="line in lines"
+    >
       <div class="content">
         <div class="text">
           <p>
             <span v-for="i in 2">
               <span v-for="item in line">
-                <span class="number"
-                      :style="`font-weight: ${ weight } ;`">{{item.number}}</span>
+                <span
+                  :style="`font-weight: ${ weight } ;`"
+                  class="number"
+                >{{item.number}}</span>
                 <span class="unit">{{item.unit}}</span>
                 <span class="legend">{{item.legend}}</span>
               </span>
@@ -55,80 +58,78 @@
   </section>
 </template>
 <script>
-    export default {
-        data() {
-            return {
-                weight: 100,
-                lines: [
-                    [
+export default {
+  data() {
+    return {
+      weight: 100,
+      lines: [
+        [
+          {
+            number: "11/mar",
+            unit: "",
+            legend: "Birthday",
+          },
 
-                        {
-                            number: "11/mar",
-                            unit: "",
-                            legend: "Birthday"
-                        },
-
-                        {
-                            number: "71",
-                            unit: "years",
-                            legend: "lifetime"
-                        },
-                        {
-                            number: "50",
-                            unit: "",
-                            legend: "Studio Albums"
-                        },
-                    ],
-                    [
-                        {
-                            number: "11",
-                            unit: "years",
-                            legend: "Composed his first tango"
-                        },
-                          {
-                            number: "1977",
-                            unit: "",
-                            legend: "Libertango album released"
-                        },
-                    ],
-                    [
-
-                        {
-                            number: "750",
-                            unit: "+",
-                            legend: "works"
-                        },
-                        {
-                            number: "40",
-                            unit: "",
-                            legend: "Film scores"
-                        },
-                        {
-                            number: "1959",
-                            unit: "",
-                            legend: "Adios Nonino"
-                        },
-                    ]
-                ]
-            };
-        },
-        methods: {
-            interpolate(x1, y1, x3, y3, x2) {
-                return ((x2 - x1) * (y3 - y1) / (x3 - x1)) + y1
-            }
-        },
-        mounted() {
-            this.weight = 200
-        },
-        watch: {
-            weight: function (val) {
-                this.$refs.mobile.style.fontWeight = val
-                this.$refs.mobile.style.left = this.interpolate(100, 0, 900, 100, val) + '%'
-                this.$refs.actual.style.left = this.$refs.mobile.style.left
-            },
-        },
-
+          {
+            number: "71",
+            unit: "years",
+            legend: "lifetime",
+          },
+          {
+            number: "50",
+            unit: "",
+            legend: "Studio Albums",
+          },
+        ],
+        [
+          {
+            number: "11",
+            unit: "years",
+            legend: "Composed his first tango",
+          },
+          {
+            number: "1977",
+            unit: "",
+            legend: "Libertango album released",
+          },
+        ],
+        [
+          {
+            number: "750",
+            unit: "+",
+            legend: "works",
+          },
+          {
+            number: "40",
+            unit: "",
+            legend: "Film scores",
+          },
+          {
+            number: "1959",
+            unit: "",
+            legend: "Adios Nonino",
+          },
+        ],
+      ],
     };
+  },
+  methods: {
+    interpolate(x1, y1, x3, y3, x2) {
+      return ((x2 - x1) * (y3 - y1)) / (x3 - x1) + y1;
+    },
+  },
+  mounted() {
+    this.weight = 200;
+  },
+  watch: {
+    weight: function (val) {
+      this.$refs.mobile.style.fontWeight = val;
+      this.$refs.mobile.style.left =
+        this.interpolate(100, 0, 900, 100, val) + "%";
+      //   this.$refs.actual.style.marginLeft = this.$refs.mobile.style.left;
+    },
+  },
+};
 </script>
 
 
@@ -138,6 +139,67 @@
 @import "../scss/mixins";
 
 #marquee {
+  .overflowable {
+    overflow: hidden;
+    position: absolute;
+    height: 14em;
+    width: 100vw;
+    .controlSlider {
+      position: absolute;
+      z-index: 1;
+      margin-top: 1.5em;
+      width: 11em;
+      font-variant-numeric: lining-nums tabular-nums;
+      background: rgba(#fff, 1);
+      right: -100em;
+      padding: 1em 102em 1em 1.5em;
+      h4 {
+        margin-bottom: 0;
+      }
+      .flex {
+        display: flex;
+        font-size: 0.7em;
+        color: $beige3;
+        align-items: center;
+        input {
+          margin: 0.5em;
+          text-align: center;
+        }
+      }
+      .actual {
+        text-align: center;
+        color: $beige3;
+        font-size: 0.7em;
+        margin: 0;
+      }
+      p.extremes {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin: 0;
+        margin-right: 0.55em;
+        // margin-top: -0.05em;
+        height: 0.75em;
+        font-size: 7.5em;
+        line-height: 0.38em;
+      }
+      .a {
+        color: $warmGray;
+        position: absolute;
+        text-align: center;
+        &.right {
+          left: 100%;
+        }
+        &.left {
+          left: 0%;
+        }
+      }
+      .mobile {
+        color: #000;
+      }
+    }
+  }
+
   .overflowable {
     margin-top: 8em;
   }
@@ -196,7 +258,7 @@
       animation-play-state: paused;
     }
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       .text {
         animation-direction: reverse;
       }

@@ -46,7 +46,7 @@
 
         <div class="is-col is-11 is-offset-1">
           <h3 class="inspectable">
-            Intended for optimizing the available space in press media and other publications, <em>Piazzolla</em> has a compact appearance which allows for small font sizes and tight leading while achieving <em>solid lines</em> and <em>robust paragraphs</em>.
+            Intended for optimizing the available space in press media and other publications, <span class="sc">Piazzolla</span> has a compact appearance which allows for small font sizes and tight leading while achieving <em>solid lines</em> and <em>robust paragraphs</em>.
           </h3>
         </div>
       </div>
@@ -147,7 +147,7 @@
       }
     }
     @include mobile() {
-      font-size: calc(1vw * 23);
+      font-size: calc(1vw * 24);
       .is-2 {
         margin-right: 0.36em;
       }

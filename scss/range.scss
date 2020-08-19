@@ -5,7 +5,6 @@ input[type="range"] {
     border: 0;
     border-top: 1px dashed #d3d3d3;
     border-bottom: 1px dashed #d3d3d3;
-    // border-radius: 5px;
     background: transparent;
     outline: none;
     opacity: 0.7;
@@ -21,6 +20,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 50%;
     background: $green;
     cursor: pointer;
+    border: 1px solid #fff;
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -29,4 +29,5 @@ input[type="range"]::-moz-range-thumb {
     border-radius: 50%;
     background: $green;
     cursor: pointer;
+    border: 1px solid #fff;
 }
