@@ -131,6 +131,16 @@ export default {
 
       moments.forEach((e) => e.classList.remove("active"));
       moment.classList.add("active");
+
+      // Scolling
+      moment.scrollIntoView({
+        behavior: "instant",
+      });
+
+      window.scrollTo({
+        top: window.scrollY - 200,
+        behavior: "smooth",
+      });
     },
     autoActivate() {
       let elements, winHeight;
@@ -158,6 +168,7 @@ export default {
             ) {
               elements.forEach((e) => e.classList.remove("active"));
               element.classList.add("active");
+
               return;
             }
           }
