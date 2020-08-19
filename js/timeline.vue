@@ -133,14 +133,16 @@ export default {
       moment.classList.add("active");
 
       // Scolling
-      moment.scrollIntoView({
-        behavior: "instant",
-      });
+      if (moment.getBoundingClientRect().top < 100) {
+        moment.scrollIntoView({
+          behavior: "instant",
+        });
 
-      window.scrollTo({
-        top: window.scrollY - 200,
-        behavior: "smooth",
-      });
+        window.scrollTo({
+          top: window.scrollY - 200,
+          behavior: "smooth",
+        });
+      }
     },
     autoActivate() {
       let elements, winHeight;
