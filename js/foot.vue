@@ -18,7 +18,7 @@
         <div class="is-col">
           <h4>Piazzolla's web-specimen </h4>
           <p>
-            Designed and coded by <a href="mailto:lucia.domenech@gmail.com">Lucía Domenech</a> and Juan Pablo del Peral. Content editing by Eliana Fucili and Esteban Aguilera.
+            Designed and coded by <a target="_blank" href="https://luciadomenech.com/">Lucía Domenech</a> and Juan Pablo del Peral. Content editing by Eliana Fucili and Esteban Aguilera.
           </p>
         </div>
         <div class="is-col">
