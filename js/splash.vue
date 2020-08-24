@@ -133,7 +133,7 @@
     line-height: 0.83;
     text-align: right;
     .is-1 {
-      font-weight: 600;
+      font-weight: 700;
     }
 
     @include desktop() {
@@ -147,7 +147,7 @@
       }
     }
     @include mobile() {
-      font-size: calc(1vw * 24);
+      font-size: calc(1vw * 23);
       .is-2 {
         margin-right: 0.36em;
       }
