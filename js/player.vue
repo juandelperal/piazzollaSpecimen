@@ -117,9 +117,9 @@ export default {
           url: "2hWStTJAvzV8KPCaMqqy65",
         },
         {
-          title: "Fuga y misterio",
-          instruments: "María de Buenos Aires",
-          url: "5OOR7iX9b4dlT5EdrESY6v",
+          title: "Muerte del Ángel",
+          instruments: "La trilogie de l'ange",
+          url: "7zEeXRShPzLocivfAhRMbe",
         },
         {
           title: "3 min. con la realidad",
