@@ -5,7 +5,7 @@
         <span class="logo sc">
           <span class="black"></span> Piazzolla <span class="hidden-mobile">Type System</span>
         </span>
-        <a href="https://huertatipografica.com/en/fonts/piazolla"
+        <a href="https://huertatipografica.com/en/fonts/piazzolla"
            target="_blank">
           Download
         </a>

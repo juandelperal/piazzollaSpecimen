@@ -37,7 +37,7 @@
             </span>
           </p>
 
-          <a href="https://huertatipografica.com/en/fonts/piazolla"
+          <a href="https://huertatipografica.com/en/fonts/piazzolla"
              target="_blank">
             Get the font →
           </a>
