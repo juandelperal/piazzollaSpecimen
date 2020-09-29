@@ -61,7 +61,7 @@
           </p>
           <div class="is-col is-3 is-offset-1 inspectable">
             <p class="small is-small-col">
-              1. Piazzolla has more than 2300 characters and supports 210+ languages across all continents that use the Latin, Greek and Cyrillic scripts.
+              1. Piazzolla has more than 2300 characters and supports 210+ languages across all continents.
             </p>
           </div>
           <div class="is-col is-7 relative is-offset-1 inspectable">
