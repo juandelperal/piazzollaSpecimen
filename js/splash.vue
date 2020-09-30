@@ -198,6 +198,9 @@
     &:hover {
       padding-left: 1em;
     }
+    @include mobile() {
+        margin-bottom: 3rem;
+    }
   }
 }
 

@@ -1,14 +1,8 @@
 <template>
-  <section
-    data-scroll-section
-    id="player"
-  >
+  <section data-scroll-section id="player">
     <div class="margins">
       <h3>This is Astor Piazzolla</h3>
-      <div
-        :key="k"
-        v-for="(song, k)  in songs"
-      >
+      <div :key="k" v-for="(song, k) in songs">
         <p>
           <a
             :href="'https://open.spotify.com/track/' + song.url"
@@ -45,7 +39,9 @@ p {
   font-size: rem-calc(24px);
   margin-bottom: 0.4em;
   a {
-    display: flex;
+    @include desktop() {
+      display: flex;
+    }
 
     // &:first-child,
     &:hover {
@@ -87,6 +83,10 @@ p {
       }
     }
     em {
+      @include mobile() {
+        display: block;
+        margin-left: 1.7rem;
+      }
       margin-left: 1em;
       //   flex-shrink: 1;
       color: $dark4;
