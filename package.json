@@ -23,17 +23,17 @@
     },
     "homepage": "https://github.com/juandelperal/piazzollaSpecimen#readme",
     "devDependencies": {
-        "cross-env": "^7.0.2",
-        "laravel-mix": "^5.0.4",
-        "resolve-url-loader": "^3.1.0",
-        "sass": "^1.26.10",
+        "cross-env": "^7.0.3",
+        "laravel-mix": "^5.0.9",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "^1.32.5",
         "sass-loader": "^8.0.2",
         "string-replace-loader": "^2.3.0",
-        "vue-template-compiler": "^2.6.11"
+        "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "vue": "^2.6.11",
-        "vue-in-viewport-directive": "^2.0.1",
+        "vue": "^2.6.12",
+        "vue-in-viewport-directive": "^2.0.2",
         "vue-showdown": "^2.4.1"
     }
 }
