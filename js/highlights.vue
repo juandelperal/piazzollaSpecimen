@@ -230,7 +230,7 @@
         <!-- Card -->
         <card class="highlight">
           <p lang="nl">
-            bíj
+            jíj
           </p>
           <template v-slot:back>
             <p>
